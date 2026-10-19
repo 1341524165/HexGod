@@ -1,0 +1,147 @@
+"""Passive click-to-card correlation for live OCR frames.
+
+No game input is sent. A click is only recorded after the same game window
+subsequently shows no augment panel on two scans.
+"""
+from __future__ import annotations
+
+
+def live_geometry(payload, choices):
+    context = payload.get("capture_context") or {}
+    crop = payload.get("crop_geometry") or {}
+    box = context.get("lol_window_bbox")
+    rects = crop.get("augment_rects") or []
+    cards = crop.get("card_rects") or []
+    panel_evidence = (bool((payload.get("anchor_detection") or {}).get("detected")) or
+                      bool((payload.get("frame_quality") or {}).get("probable_augment_frame")) or
+                      bool(payload.get("ocr_inferred_augment_frame")))
+    if (not context.get("foreground_matches_lol") or not isinstance(box, list) or len(box) != 4
+            or not isinstance(context.get("lol_window_hwnd"), int) or len(rects) != 3
+            or not panel_evidence or len(choices) != 3 or
+            (not any(c.get("matched") for c in choices) and not payload.get('titleRegionCards'))):
+        return None
+    try:
+        left, top = int(box[0]), int(box[1])
+        right, bottom = int(box[2]), int(box[3])
+        image_size = crop.get("image_size") or [right - left, bottom - top]
+        sx, sy = (right-left) / image_size[0], (bottom-top) / image_size[1]
+        scale = max(0.5, min(2.0, int(image_size[1]) / 1080))
+        hitboxes, rerolls = [], []
+        for rect in rects:
+            x, y = int(rect["x"]), int(rect["y"])
+            width, height = int(rect["width"]), int(rect["height"])
+            if width <= 0 or height <= 0:
+                return None
+            # Exclude the per-card reroll button below the actual card.
+            center_y = y + height / 2
+            center_x = x + width / 2
+            hitboxes.append([max(left, int(left + (x - 20 * scale) * sx)),
+                             max(top, int(top + (center_y - 245 * scale) * sy)),
+                             min(right, int(left + (x + width + 20 * scale) * sx)),
+                             min(bottom, int(top + (center_y + 260 * scale) * sy))])
+            if payload.get('titleRegionCards'):
+                index = len(hitboxes)-1
+                if len(cards) != 3:
+                    return None
+                card = cards[index]
+                x1, y1, x2, y2 = (int(value) for value in card)
+                cw, ch = x2-x1, y2-y1
+                hitboxes[-1] = [int(left+(x1+cw*.04)*sx), int(top+(y1+ch*.03)*sy),
+                                int(left+(x2-cw*.04)*sx), int(top+(y2-ch*.03)*sy)]
+                rerolls.append([int(left+(x1+cw*.39)*sx), int(top+(y2+ch*.025)*sy),
+                                int(left+(x1+cw*.61)*sx), int(top+(y2+ch*.145)*sy)])
+        return {"windowHwnd": context["lol_window_hwnd"],
+                "capturedAtMs": int(context.get("timestamp_ms") or 0),
+                "hitboxes": hitboxes,
+                "rerollHitboxes": rerolls,
+                "names": [c["name"] if c.get("matched") else None for c in choices]}
+    except (ValueError, TypeError, KeyError):
+        return None
+
+
+class AutomaticSelectionTracker:
+    def __init__(self):
+        self.frame = None
+        self.pending = None
+        self.misses = 0
+        self.first_miss = 0
+        self.last_frame_at = 0
+        self.last_event = 'waiting_for_panel'
+
+    def observe_click(self, x, y, hwnd, at_ms, geometry=None):
+        frame = geometry if isinstance(geometry, dict) else self.frame
+        self.last_event = 'no_frame' if frame is None else 'pending_exists' if self.pending else 'wrong_window'
+        if frame is None or self.pending is not None or hwnd != frame["windowHwnd"]:
+            return None
+        self.last_event = 'stale_frame'
+        if at_ms < frame["capturedAtMs"] or at_ms > frame["capturedAtMs"] + 5000:
+            return None
+        slots = [index for index, (x1, y1, x2, y2) in enumerate(frame["hitboxes"])
+                 if x1 <= x <= x2 and y1 <= y <= y2]
+        if len(slots) != 1:
+            self.last_event = 'outside_card_or_reroll'
+            return None
+        if not frame["names"][slots[0]]:
+            self.last_event = 'clicked_title_unrecognized'
+            return None
+        self.pending = {"name": frame["names"][slots[0]], "atMs": at_ms,
+                        "windowHwnd": hwnd, "slot": slots[0], "signature": tuple(frame["names"])}
+        self.last_event = 'click_accepted_waiting_for_disappearance'
+        self.frame = frame
+        self.misses = 0
+        self.first_miss = 0
+        return self.pending["name"]
+
+    def observe_frame(self, geometry, *, foreground_game, frame_detected, hwnd, at_ms):
+        if at_ms <= self.last_frame_at:
+            return None
+        self.last_frame_at = at_ms
+        pending = self.pending
+        if pending and at_ms - pending["atMs"] > 10000:
+            self.last_event = 'confirmation_timeout'
+            self.pending = None
+            pending = None
+        if pending and hwnd and hwnd != pending['windowHwnd']:
+            self.reset()
+            self.last_event = 'game_window_changed'
+            pending = None
+        if pending and at_ms <= pending['atMs']:
+            return None
+        if geometry is not None:
+            if pending and geometry['names'][pending['slot']] and geometry['names'][pending['slot']] != pending['name']:
+                # Reroll or another round: the clicked card was not confirmed.
+                self.pending = None
+                self.last_event = 'clicked_slot_changed'
+                self.misses = 0
+            self.misses = 0
+            self.frame = geometry
+            return None
+        if not foreground_game or self.frame is None or hwnd != self.frame["windowHwnd"]:
+            return None
+        if pending and not frame_detected:
+            self.misses += 1
+            if self.misses == 1:
+                self.first_miss = at_ms
+            if self.misses >= 2 and at_ms - self.first_miss >= 400:
+                name = pending["name"]
+                self.pending = None
+                self.frame = None
+                self.misses = 0
+                self.last_event = 'selection_confirmed'
+                return name
+        elif pending:
+            self.misses = 0
+        else:
+            self.misses += 1
+            if self.misses >= 2:
+                self.frame = None
+                self.misses = 0
+        return None
+
+    def reset(self):
+        self.frame = None
+        self.pending = None
+        self.misses = 0
+        self.first_miss = 0
+        self.last_frame_at = 0
+        self.last_event = 'waiting_for_panel'

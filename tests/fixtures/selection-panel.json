@@ -1,0 +1,107 @@
+{
+  "capture": {
+    "timestamp_ms": 1791687220893,
+    "lol_window_bbox": [
+      0,
+      0,
+      2560,
+      1440
+    ],
+    "lol_window_hwnd": 393674,
+    "lol_window_rect": [
+      0,
+      0,
+      2560,
+      1440
+    ],
+    "lol_client_rect": [
+      0,
+      0,
+      2560,
+      1440
+    ],
+    "lol_window_mode": "borderless_or_fullscreen",
+    "dpi": 96,
+    "dpi_scale": 1.0,
+    "monitor_number": 5,
+    "monitor_device": "\\\\.\\DISPLAY5",
+    "monitor_rect": [
+      0,
+      0,
+      2560,
+      1440
+    ],
+    "monitor_work_rect": [
+      0,
+      0,
+      2560,
+      1392
+    ],
+    "monitor_primary": true,
+    "foreground_kind": "lol",
+    "foreground_matches_lol": true,
+    "foreground_matches_assistant": false,
+    "foreground_matches_overlay": false,
+    "lol_window_foreground": true,
+    "method": "mss",
+    "image_size": [
+      2560,
+      1440
+    ],
+    "content_viewport": {
+      "x": 0,
+      "y": 0,
+      "width": 2560,
+      "height": 1440
+    }
+  },
+  "geometry": {
+    "windowHwnd": 393674,
+    "capturedAtMs": 1791687220893,
+    "hitboxes": [
+      [
+        607,
+        265,
+        1002,
+        922
+      ],
+      [
+        1082,
+        265,
+        1477,
+        922
+      ],
+      [
+        1557,
+        265,
+        1952,
+        922
+      ]
+    ],
+    "rerollHitboxes": [
+      [
+        757,
+        960,
+        852,
+        1044
+      ],
+      [
+        1232,
+        960,
+        1327,
+        1044
+      ],
+      [
+        1707,
+        960,
+        1802,
+        1044
+      ]
+    ],
+    "names": [
+      "双生火焰",
+      "魔法转物理",
+      "终极不可阻挡"
+    ]
+  }
+}

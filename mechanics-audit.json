@@ -1,0 +1,4176 @@
+{
+  "dataVersion": "16.19.1",
+  "patch": "16.19",
+  "heroes": 173,
+  "augments": 211,
+  "cases": 74563,
+  "elapsedSeconds": 28.62,
+  "classification": {
+    "no_item_direction": 118,
+    "hero_conditional": 33,
+    "mechanism": 60
+  },
+  "onHitAugments": [
+    "双刀流",
+    "双发快射",
+    "台风",
+    "注魔",
+    "火上浇油",
+    "点亮他们！",
+    "秘术冲拳",
+    "缩小射线",
+    "虚幻武器"
+  ],
+  "failures": [],
+  "rows": [
+    {
+      "name": "万用瞄准镜",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "三重射击",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "下雪天",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "不动如山",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "不祥契约",
+      "status": "mechanism",
+      "features": [
+        "ap_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 71,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "灭世者的死亡之帽",
+          "风暴狂涌",
+          "卢登的回声"
+        ]
+      }
+    },
+    {
+      "name": "亮出你的剑",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "仁慈打击",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "仆从大师",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "会心治疗",
+      "status": "mechanism",
+      "features": [
+        "heal_crit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "毁坏仪式"
+        ]
+      }
+    },
+    {
+      "name": "会心防御",
+      "status": "mechanism",
+      "features": [
+        "crit_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 145,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "毁坏仪式"
+        ]
+      }
+    },
+    {
+      "name": "位面转移",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "你摸不到",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "侵蚀",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "保持坚定",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "信念者的强化",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "俯冲轰炸",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "全凭身法",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "全心为你",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "全能龙魂",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "关键暴击",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "冰寒",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "冰雪爆裂",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "利刃华尔兹",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "别停止引导",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "前进时间到",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "加固护盾",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "升级：中娅",
+      "status": "mechanism",
+      "features": [
+        "item_upgrade"
+      ],
+      "required": [
+        3157
+      ],
+      "alternatives": [],
+      "reason": "按升级指定装备提供候选",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "中娅沙漏"
+        ]
+      }
+    },
+    {
+      "name": "升级：收集者",
+      "status": "mechanism",
+      "features": [
+        "item_upgrade"
+      ],
+      "required": [
+        6676
+      ],
+      "alternatives": [],
+      "reason": "按升级指定装备提供候选",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "收集者"
+        ]
+      }
+    },
+    {
+      "name": "升级：无尽之刃",
+      "status": "mechanism",
+      "features": [
+        "item_upgrade"
+      ],
+      "required": [
+        3031
+      ],
+      "alternatives": [],
+      "reason": "按升级指定装备提供候选",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "无尽之刃"
+        ]
+      }
+    },
+    {
+      "name": "升级：死亡之舞",
+      "status": "mechanism",
+      "features": [
+        "item_upgrade"
+      ],
+      "required": [
+        6333
+      ],
+      "alternatives": [],
+      "reason": "按升级指定装备提供候选",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "死亡之舞"
+        ]
+      }
+    },
+    {
+      "name": "升级：焚天",
+      "status": "mechanism",
+      "features": [
+        "item_upgrade"
+      ],
+      "required": [
+        6610
+      ],
+      "alternatives": [],
+      "reason": "按升级指定装备提供候选",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "焚天"
+        ]
+      }
+    },
+    {
+      "name": "升级：献祭",
+      "status": "mechanism",
+      "features": [
+        "item_upgrade"
+      ],
+      "required": [],
+      "alternatives": [
+        3068,
+        6664
+      ],
+      "reason": "按升级指定装备提供候选",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "日炎圣盾",
+          "璀璨回响"
+        ]
+      }
+    },
+    {
+      "name": "升级：耀光",
+      "status": "mechanism",
+      "features": [
+        "item_upgrade"
+      ],
+      "required": [],
+      "alternatives": [
+        2510,
+        3078,
+        3100,
+        3508,
+        6662
+      ],
+      "reason": "按升级指定装备提供候选",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "黄昏与黎明",
+          "三相之力",
+          "巫妖之祸"
+        ]
+      }
+    },
+    {
+      "name": "升级：花晓之剑",
+      "status": "hero_conditional",
+      "features": [
+        "item_upgrade"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "当前数据缺少可购买的指定装备，暂不强推未知装备",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "升级：贪欲九头蛇",
+      "status": "mechanism",
+      "features": [
+        "item_upgrade"
+      ],
+      "required": [
+        3074
+      ],
+      "alternatives": [],
+      "reason": "按升级指定装备提供候选",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "贪欲九头蛇"
+        ]
+      }
+    },
+    {
+      "name": "双刀流",
+      "status": "mechanism",
+      "features": [
+        "on_hit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "黄昏与黎明",
+          "斯塔缇克电刃",
+          "纳什之牙"
+        ]
+      }
+    },
+    {
+      "name": "双发快射",
+      "status": "mechanism",
+      "features": [
+        "crit_repeats_on_hit",
+        "on_hit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "毁坏仪式",
+          "黄昏与黎明",
+          "斯塔缇克电刃"
+        ]
+      }
+    },
+    {
+      "name": "双生火焰",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "叠角龙",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "可靠武器",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "台风",
+      "status": "mechanism",
+      "features": [
+        "on_hit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "黄昏与黎明",
+          "斯塔缇克电刃",
+          "纳什之牙"
+        ]
+      }
+    },
+    {
+      "name": "史上最大雪球",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "吃过路兵",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "吞噬灵魂",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "吵闹鬼",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "和我一起困在这里",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "咏叹奏鸣",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "咒语裂变",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "哎哟，我的硬币！",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "唯快不破",
+      "status": "mechanism",
+      "features": [
+        "mobility_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "喂呜喂呜",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "回力OK镖",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "回响施放",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "回归基本功",
+      "status": "mechanism",
+      "features": [
+        "no_ultimate"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 16,
+      "example": {
+        "hero": "元素女皇",
+        "regular": [
+          "电震涡流剑",
+          "夜之锋刃",
+          "赛瑞尔达的怨恨"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "地形专家",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "坦克引擎",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "多重射击",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "夜狩",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "大力",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "大地苏醒",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "大师铸就",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "大招工具人",
+      "status": "mechanism",
+      "features": [
+        "ultimate_only_haste"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "大法师",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "天音爆",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "夺金",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "威能之追求",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "家园卫士",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "尊我为王",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "小丑学院",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "小小的额外帮助",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "尖端发明家",
+      "status": "mechanism",
+      "features": [
+        "item_haste"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "舒瑞娅的战歌",
+          "黄昏与黎明",
+          "巫妖之祸"
+        ]
+      }
+    },
+    {
+      "name": "尤里卡",
+      "status": "mechanism",
+      "features": [
+        "ap_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 71,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "灭世者的死亡之帽",
+          "风暴狂涌",
+          "卢登的回声"
+        ]
+      }
+    },
+    {
+      "name": "属性叠属性叠属性！",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "属性叠属性！",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "属性！",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "山脉龙魂",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "巨人杀手",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "巨像的勇气",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "巫师式思考",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "弹球",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "强力护盾",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "循环往复",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "心灵净化",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "快中求稳",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "快步",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "急急小子",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "急救用具",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "急速之追求",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "惊惧",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "我们的治疗",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "战争交响乐",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "扇巴掌",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "扳机炼狱",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "捐赠",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "掷骰狂人",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "旋转至胜",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "无尽大杀四方",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "无限循环往复",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "易损",
+      "status": "mechanism",
+      "features": [
+        "burn",
+        "effect_crit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "毁坏仪式",
+          "残疫",
+          "兰德里的折磨"
+        ]
+      }
+    },
+    {
+      "name": "星界躯体",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "暗影疾奔",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "暴击律动",
+      "status": "mechanism",
+      "features": [
+        "crit_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 145,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "毁坏仪式"
+        ]
+      }
+    },
+    {
+      "name": "暴击飞弹",
+      "status": "mechanism",
+      "features": [
+        "crit_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 145,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "毁坏仪式"
+        ]
+      }
+    },
+    {
+      "name": "更万用的瞄准镜",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "最万用的瞄准镜",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "最终形态",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "有始有终",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "术士果汁盒",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "杀意翻涌",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "杀戮时间到了",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "歌利亚巨人",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "死亡之环",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "残忍",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "沃格勒特的巫师帽",
+      "status": "mechanism",
+      "features": [
+        "item_quest"
+      ],
+      "required": [
+        3089,
+        3157
+      ],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "灭世者的死亡之帽",
+          "中娅沙漏"
+        ]
+      }
+    },
+    {
+      "name": "注魔",
+      "status": "mechanism",
+      "features": [
+        "mana_on_hit",
+        "on_hit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "卢登的回声",
+          "黄昏与黎明",
+          "斯塔缇克电刃"
+        ]
+      }
+    },
+    {
+      "name": "泰坦的坚决",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "活力焕发",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "海克斯科技龙魂",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "海洋龙魂",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "海牛阿福的勇士",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "渴血",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "溢流",
+      "status": "mechanism",
+      "features": [
+        "mana_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 145,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "卢登的回声",
+          "黯炎火炬",
+          "实现器"
+        ]
+      }
+    },
+    {
+      "name": "潘朵拉的盒子",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "濒死悟道",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "火上浇油",
+      "status": "mechanism",
+      "features": [
+        "burn",
+        "on_hit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "黄昏与黎明",
+          "斯塔缇克电刃",
+          "纳什之牙"
+        ]
+      }
+    },
+    {
+      "name": "火狐",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "灵巧",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "灵魂虹吸",
+      "status": "mechanism",
+      "features": [
+        "crit_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 145,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "毁坏仪式"
+        ]
+      }
+    },
+    {
+      "name": "灵魄炸弹",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "点亮他们！",
+      "status": "mechanism",
+      "features": [
+        "on_hit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "黄昏与黎明",
+          "斯塔缇克电刃",
+          "纳什之牙"
+        ]
+      }
+    },
+    {
+      "name": "炼狱导管",
+      "status": "mechanism",
+      "features": [
+        "burn"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 99,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "残疫",
+          "兰德里的折磨"
+        ]
+      }
+    },
+    {
+      "name": "炼狱龙魂",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "炽烈黎明",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "炽燃利息",
+      "status": "mechanism",
+      "features": [
+        "burn"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 99,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "残疫",
+          "兰德里的折磨"
+        ]
+      }
+    },
+    {
+      "name": "牙仙子",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "物法皆修",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "物理转魔法",
+      "status": "mechanism",
+      "features": [
+        "ad_to_ap"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "灭世者的死亡之帽",
+          "风暴狂涌",
+          "卢登的回声"
+        ]
+      }
+    },
+    {
+      "name": "狂徒豪气",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "狂热者",
+      "status": "mechanism",
+      "features": [
+        "crit_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 145,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "毁坏仪式"
+        ]
+      }
+    },
+    {
+      "name": "狙神飞星",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "玻璃大炮",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "珠光护手",
+      "status": "mechanism",
+      "features": [
+        "spell_crit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "毁坏仪式",
+          "无尽之刃"
+        ]
+      }
+    },
+    {
+      "name": "生机迸发",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "由心及物",
+      "status": "mechanism",
+      "features": [
+        "mana_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 145,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "卢登的回声",
+          "黯炎火炬",
+          "实现器"
+        ]
+      }
+    },
+    {
+      "name": "由暴生急",
+      "status": "mechanism",
+      "features": [
+        "crit_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 145,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "毁坏仪式"
+        ]
+      }
+    },
+    {
+      "name": "电涌力场",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "男爵之手",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "神圣干预",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "神圣雪球",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "神射法师",
+      "status": "mechanism",
+      "features": [
+        "ap_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 71,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "灭世者的死亡之帽",
+          "风暴狂涌",
+          "卢登的回声"
+        ]
+      }
+    },
+    {
+      "name": "科学狂人",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "秘术冲拳",
+      "status": "mechanism",
+      "features": [
+        "on_hit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "黄昏与黎明",
+          "斯塔缇克电刃",
+          "纳什之牙"
+        ]
+      }
+    },
+    {
+      "name": "空投熊",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "穿针引线",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "精怪魔法",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "纯粹主义者 - 术师",
+      "status": "mechanism",
+      "features": [
+        "attack_speed_to_haste"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 63,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "黄昏与黎明",
+          "斯塔缇克电刃",
+          "纳什之牙"
+        ]
+      }
+    },
+    {
+      "name": "练腿日",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "终极不可阻挡",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "终极九头蛇",
+      "status": "mechanism",
+      "features": [
+        "item_quest"
+      ],
+      "required": [
+        3074,
+        3748,
+        6698
+      ],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "贪欲九头蛇",
+          "巨型九头蛇",
+          "亵渎九头蛇"
+        ]
+      }
+    },
+    {
+      "name": "终极刷新",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "终极唤醒",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "缩小射线",
+      "status": "mechanism",
+      "features": [
+        "on_hit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "黄昏与黎明",
+          "斯塔缇克电刃",
+          "纳什之牙"
+        ]
+      }
+    },
+    {
+      "name": "缩小引擎",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "罪恶快感",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "老练狙神",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "自然即是治愈",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "自适应防护",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "至高天诺言",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "舞会女王",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "艾卡西亚的陷落",
+      "status": "mechanism",
+      "features": [
+        "item_quest"
+      ],
+      "required": [
+        3068,
+        6664
+      ],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "日炎圣盾",
+          "璀璨回响"
+        ]
+      }
+    },
+    {
+      "name": "藏身草丛",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "虚幻武器",
+      "status": "mechanism",
+      "features": [
+        "on_hit",
+        "spell_on_hit"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "纳什之牙",
+          "巫妖之祸",
+          "黄昏与黎明"
+        ]
+      }
+    },
+    {
+      "name": "虹吸",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "蛋白粉奶昔",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "豪猪",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "质变：棱彩阶",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "质变：混沌",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "质变：黄金阶",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "贪欲束缚",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "超凡邪恶",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "超强大脑",
+      "status": "mechanism",
+      "features": [
+        "ap_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 71,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "灭世者的死亡之帽",
+          "风暴狂涌",
+          "卢登的回声"
+        ]
+      }
+    },
+    {
+      "name": "超负荷",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "踢踏舞",
+      "status": "mechanism",
+      "features": [
+        "mobility_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "转得我眩晕了",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "软弹啪叽抓",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "轻拍背部",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "过量延伸者",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "连拨击锤",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "连锁反应",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "逃跑计划",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "邦！",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "重量级打击手",
+      "status": "mechanism",
+      "features": [
+        "health_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "黄昏与黎明",
+          "瑞莱的冰晶节杖",
+          "海克斯科技火箭腰带"
+        ]
+      }
+    },
+    {
+      "name": "针插垫",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "钢化你心",
+      "status": "mechanism",
+      "features": [
+        "item_quest"
+      ],
+      "required": [
+        3084
+      ],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "心之钢"
+        ]
+      }
+    },
+    {
+      "name": "闪光弹",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "闪现向前",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "闪闪现现",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "防护面纱",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "面包和奶酪",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "面包和果酱",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "面包和黄油",
+      "status": "hero_conditional",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "依赖英雄技能或随机结果，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "风语者的祝福",
+      "status": "mechanism",
+      "features": [
+        "heal_shield"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 9,
+      "example": {
+        "hero": "仙灵女巫",
+        "regular": [
+          "钢铁烈阳之匣",
+          "黎明核心",
+          "舒瑞娅的战歌"
+        ],
+        "synergy": [
+          "耳语头环",
+          "救赎",
+          "米凯尔的祝福"
+        ]
+      }
+    },
+    {
+      "name": "飞升仪式",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "飞身踢",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "高压锅",
+      "status": "mechanism",
+      "features": [
+        "burn",
+        "health_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "残疫",
+          "兰德里的折磨",
+          "黄昏与黎明"
+        ]
+      }
+    },
+    {
+      "name": "魄罗蛮冲",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "魔法转物理",
+      "status": "mechanism",
+      "features": [
+        "ap_to_ad"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "灭世者的死亡之帽",
+          "斯塔缇克电刃",
+          "鬼索的狂暴之刃"
+        ]
+      }
+    },
+    {
+      "name": "魔法飞弹",
+      "status": "mechanism",
+      "features": [
+        "health_scaling"
+      ],
+      "required": [],
+      "alternatives": [],
+      "reason": "按当前描述识别机制；触发频率与收益仍取决于英雄和对局",
+      "heroesWithMechanismPlan": 173,
+      "example": {
+        "hero": "万花通灵",
+        "regular": [
+          "残疫",
+          "灭世者的死亡之帽",
+          "海克斯科技火箭腰带"
+        ],
+        "synergy": [
+          "黄昏与黎明",
+          "瑞莱的冰晶节杖",
+          "海克斯科技火箭腰带"
+        ]
+      }
+    },
+    {
+      "name": "鲨鱼暴风",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "鲨鱼诱饵",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    },
+    {
+      "name": "黎明使者的坚决",
+      "status": "no_item_direction",
+      "features": [],
+      "required": [],
+      "alternatives": [],
+      "reason": "描述没有明确装备要求，保留英雄基础路线",
+      "heroesWithMechanismPlan": 1,
+      "example": {
+        "hero": "机械公敌",
+        "regular": [
+          "风暴狂涌",
+          "裂隙制造者",
+          "放血者的诅咒"
+        ],
+        "synergy": []
+      }
+    }
+  ]
+}

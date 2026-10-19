@@ -1,0 +1,21 @@
+{
+  "source_xlsx": "hexdata-api://16.15/2026-08-02",
+  "source_name": "hexdata-api",
+  "generated_at": "2026-08-03T17:36:17.299Z",
+  "version": "16.15",
+  "schema_version": "1",
+  "desktop_data_schema_version": "2",
+  "core_payload_hash": "d232031529339819aec0798f2dde6f485a244444fabf272c155ee5c948b75d35",
+  "source_core_payload_hash": "1134f11a48b6ff880c7852353ece4e0e0692339dd9915b8a5e5bcfb0360fbdf7",
+  "runtime_projection_version": "2",
+  "report_date": "2026-08-02",
+  "hero_count": 173,
+  "augment_count": 206,
+  "hero_trio_coverage": 163,
+  "current_patch_hero_trio_coverage": 162,
+  "filtered_unknown_augment_count": 0,
+  "data_health_warnings": [
+    "hero_trio_zero_coverage:11",
+    "queue_unavailable_current_patch:22"
+  ]
+}

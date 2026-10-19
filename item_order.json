@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "patch": "16.15",
+  "heroOpenings": {
+    "战争之影": {
+      "items": [3161, 3004],
+      "deferUntilCore": [6696],
+      "basis": "curated",
+      "reason": "按本次需求使用青龙刀→魔宗路线；魔宗叠满后转魔切。公理圆弧在两件核心之后再作候选。此顺序没有逐件路径胜率样本。"
+    }
+  }
+}

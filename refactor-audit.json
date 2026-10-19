@@ -1,0 +1,6655 @@
+{
+  "patch": "16.15",
+  "reportDate": "2026-08-02",
+  "referenceCommit": "e07cef86e7f88a16aa6046eabfc4cc7c4ab8da5a",
+  "heroes": [
+    {
+      "hero": "Locke",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "灭世者的死亡之帽",
+      "basis": "common_first_fallback",
+      "steps": [
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "common_first_fallback"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "single_item"
+        },
+        {
+          "item": "巫妖之祸",
+          "id": 3100,
+          "basis": "single_item"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "single_item"
+        },
+        {
+          "item": "中娅沙漏",
+          "id": 3157,
+          "basis": "single_item"
+        },
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "single_item"
+        }
+      ]
+    },
+    {
+      "hero": "万花通灵",
+      "beforeFirst": "残疫",
+      "afterFirst": "残疫",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "帝国指令",
+          "id": 4005,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "上古领主",
+      "beforeFirst": "心之钢",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "班德尔音管",
+          "id": 2524,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "不屈之枪",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "电震涡流剑",
+          "id": 6699,
+          "basis": "situational"
+        },
+        {
+          "item": "黑色切割者",
+          "id": 3071,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "不灭狂雷",
+      "beforeFirst": "心之钢",
+      "afterFirst": "斯塔缇克电刃",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "斯塔缇克电刃",
+          "id": 3087,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "不破之誓",
+      "beforeFirst": "卢安娜的飓风",
+      "afterFirst": "育恩塔尔荒野箭",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢安娜的飓风",
+          "id": 3085,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "斯塔缇克电刃",
+          "id": 3087,
+          "basis": "situational"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "不祥之刃",
+      "beforeFirst": "界弓",
+      "afterFirst": "海妖杀手",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "海妖杀手",
+          "id": 6672,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "situational"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "不羁之悦",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "饮血剑",
+          "id": 3072,
+          "basis": "situational"
+        },
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "不落魔锋",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "焚天",
+          "id": 6610,
+          "basis": "situational"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "九尾妖狐",
+      "beforeFirst": "影焰",
+      "afterFirst": "卢登的回声",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        },
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "亡灵战神",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "巨型九头蛇",
+          "id": 3748,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "璀璨回响",
+          "id": 6664,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "situational"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "仙灵女巫",
+      "beforeFirst": "月石再生器",
+      "afterFirst": "炽热香炉",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黎明核心",
+          "id": 6621,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "流水法杖",
+          "id": 6616,
+          "basis": "situational"
+        },
+        {
+          "item": "明朗之靴",
+          "id": 3158,
+          "basis": "situational"
+        },
+        {
+          "item": "钢铁烈阳之匣",
+          "id": 3190,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "众星之子",
+      "beforeFirst": "月石再生器",
+      "afterFirst": "月石再生器",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黎明核心",
+          "id": 6621,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "流水法杖",
+          "id": 6616,
+          "basis": "situational"
+        },
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "situational"
+        },
+        {
+          "item": "明朗之靴",
+          "id": 3158,
+          "basis": "situational"
+        },
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "傲之追猎者",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "元素女皇",
+      "beforeFirst": "狂妄",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "situational"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "光辉女郎",
+      "beforeFirst": "卢登的回声",
+      "afterFirst": "卢登的回声",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "situational"
+        },
+        {
+          "item": "巫妖之祸",
+          "id": 3100,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "兽灵行者",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "situational"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "冰晶凤凰",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "大天使之杖",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "大天使之杖",
+          "id": 3003,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "situational"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "冰霜女巫",
+      "beforeFirst": "影焰",
+      "afterFirst": "风暴狂涌",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "situational"
+        },
+        {
+          "item": "中娅沙漏",
+          "id": 3157,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "刀锋之影",
+      "beforeFirst": "狂妄",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "电震涡流剑",
+          "id": 6699,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "刀锋舞者",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "巨型九头蛇",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "巨型九头蛇",
+          "id": 3748,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "situational"
+        },
+        {
+          "item": "三相之力",
+          "id": 3078,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "北地之怒",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "situational"
+        },
+        {
+          "item": "璀璨回响",
+          "id": 6664,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "卡牌大师",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "situational"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "双界灵兔",
+      "beforeFirst": "影焰",
+      "afterFirst": "风暴狂涌",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "situational"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "发条魔灵",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "卢登的回声",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        },
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "含羞蓓蕾",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "唤潮鲛姬",
+      "beforeFirst": "月石再生器",
+      "afterFirst": "月石再生器",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黎明核心",
+          "id": 6621,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "米凯尔的祝福",
+          "id": 3222,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "situational"
+        },
+        {
+          "item": "流水法杖",
+          "id": 6616,
+          "basis": "situational"
+        },
+        {
+          "item": "明朗之靴",
+          "id": 3158,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "圣枪游侠",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "电震涡流剑",
+          "id": 6699,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "圣锤之毅",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        },
+        {
+          "item": "璀璨回响",
+          "id": 6664,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "堕落天使",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        },
+        {
+          "item": "明朗之靴",
+          "id": 3158,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "复仇之矛",
+      "beforeFirst": "破败王者之刃",
+      "afterFirst": "海妖杀手",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "海妖杀手",
+          "id": 6672,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "鬼索的狂暴之刃",
+          "id": 3124,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢安娜的飓风",
+          "id": 3085,
+          "basis": "situational"
+        },
+        {
+          "item": "饮血剑",
+          "id": 3072,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "复仇焰魂",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "大发明家",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "天启者",
+      "beforeFirst": "月石再生器",
+      "afterFirst": "月石再生器",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黎明核心",
+          "id": 6621,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "米凯尔的祝福",
+          "id": 3222,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "流水法杖",
+          "id": 6616,
+          "basis": "situational"
+        },
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "situational"
+        },
+        {
+          "item": "花晓之剑",
+          "id": 124011,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "奥术先驱",
+      "beforeFirst": "影焰",
+      "afterFirst": "风暴狂涌",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "寒冰射手",
+      "beforeFirst": "卢安娜的飓风",
+      "afterFirst": "育恩塔尔荒野箭",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢安娜的飓风",
+          "id": 3085,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "situational"
+        },
+        {
+          "item": "海妖杀手",
+          "id": 6672,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "封魔剑魂",
+      "beforeFirst": "毁坏仪式",
+      "afterFirst": "育恩塔尔荒野箭",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "毁坏仪式",
+          "id": 123430,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "振奋盔甲",
+          "id": 3065,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "situational"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "山隐之焰",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        },
+        {
+          "item": "千变者贾修",
+          "id": 6665,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "岩雀",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "巨魔之王",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "三相之力",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "三相之力",
+          "id": 3078,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "巨型九头蛇",
+          "id": 3748,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "幻翎",
+      "beforeFirst": "心之钢",
+      "afterFirst": "基克的聚合",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "基克的聚合",
+          "id": 3050,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "异画师",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "海克斯科技火箭腰带",
+          "id": 3152,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "弗雷尔卓德之心",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "班德尔音管",
+          "id": 2524,
+          "basis": "situational"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "影哨",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "饮血剑",
+          "id": 3072,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "situational"
+        },
+        {
+          "item": "卢安娜的飓风",
+          "id": 3085,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "影流之主",
+      "beforeFirst": "狂妄",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "电震涡流剑",
+          "id": 6699,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "影流之镰",
+      "beforeFirst": "狂妄",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "朔极之矛",
+          "id": 3161,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "德玛西亚之力",
+      "beforeFirst": "挺进破坏者",
+      "afterFirst": "挺进破坏者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "挺进破坏者",
+          "id": 6631,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "幻影之舞",
+          "id": 3046,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "朔极之矛",
+          "id": 3161,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "德玛西亚之翼",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "饮血剑",
+          "id": 3072,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "situational"
+        },
+        {
+          "item": "卢安娜的飓风",
+          "id": 3085,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "德玛西亚皇子",
+      "beforeFirst": "心之钢",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "德邦总管",
+      "beforeFirst": "黄昏与黎明",
+      "afterFirst": "斯塔缇克电刃",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "斯塔缇克电刃",
+          "id": 3087,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黄昏与黎明",
+          "id": 2510,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "振奋盔甲",
+          "id": 3065,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "纳什之牙",
+          "id": 3115,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "恶魔小丑",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "帝国指令",
+          "id": 4005,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        },
+        {
+          "item": "纳什之牙",
+          "id": 3115,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "惩戒之箭",
+      "beforeFirst": "卢安娜的飓风",
+      "afterFirst": "电震涡流剑",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "电震涡流剑",
+          "id": 6699,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "斯塔缇克电刃",
+          "id": 3087,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        },
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "愁云使者",
+      "beforeFirst": "影焰",
+      "afterFirst": "卢登的回声",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "戏命师",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "海克斯镜片 C44",
+          "id": 2523,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "situational"
+        },
+        {
+          "item": "轻灵之靴",
+          "id": 3009,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "战争之影",
+      "beforeFirst": "朔极之矛",
+      "afterFirst": "朔极之矛",
+      "basis": "curated",
+      "steps": [
+        {
+          "item": "朔极之矛",
+          "id": 3161,
+          "basis": "curated"
+        },
+        {
+          "item": "魔宗",
+          "id": 3004,
+          "basis": "curated"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "single_item"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "single_item"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "single_item"
+        },
+        {
+          "item": "赛瑞尔达的怨恨",
+          "id": 6694,
+          "basis": "single_item"
+        }
+      ]
+    },
+    {
+      "hero": "战争女神",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "育恩塔尔荒野箭",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "海克斯镜片 C44",
+          "id": 2523,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "纳沃利烁刃",
+          "id": 6675,
+          "basis": "situational"
+        },
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "扭曲树精",
+      "beforeFirst": "心之钢",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "披甲龙龟",
+      "beforeFirst": "心之钢",
+      "afterFirst": "兰顿之兆",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "千变者贾修",
+          "id": 6665,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "璀璨回响",
+          "id": 6664,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "探险家",
+      "beforeFirst": "三相之力",
+      "afterFirst": "三相之力",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "三相之力",
+          "id": 3078,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "魔宗",
+          "id": 3004,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "大天使之杖",
+          "id": 3003,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "situational"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "放逐之刃",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "焚天",
+          "id": 6610,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "无双剑姬",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "三相之力",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "三相之力",
+          "id": 3078,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "朔极之矛",
+          "id": 3161,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "魔宗",
+          "id": 3004,
+          "basis": "situational"
+        },
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "无极剑圣",
+      "beforeFirst": "破败王者之刃",
+      "afterFirst": "海妖杀手",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "海妖杀手",
+          "id": 6672,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "situational"
+        },
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "无畏战车",
+      "beforeFirst": "心之钢",
+      "afterFirst": "黑色切割者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黑色切割者",
+          "id": 3071,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "朔极之矛",
+          "id": 3161,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "斯特拉克的挑战护手",
+          "id": 3053,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "时光守护者",
+      "beforeFirst": "卢登的回声",
+      "afterFirst": "大天使之杖",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "大天使之杖",
+          "id": 3003,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "凛冬之临",
+          "id": 3119,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "situational"
+        },
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "situational"
+        },
+        {
+          "item": "帝国指令",
+          "id": 4005,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "时间刺客",
+      "beforeFirst": "影焰",
+      "afterFirst": "风暴狂涌",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黄昏与黎明",
+          "id": 2510,
+          "basis": "situational"
+        },
+        {
+          "item": "纳什之牙",
+          "id": 3115,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "明烛",
+      "beforeFirst": "月石再生器",
+      "afterFirst": "炽热香炉",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黎明核心",
+          "id": 6621,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "流水法杖",
+          "id": 6616,
+          "basis": "situational"
+        },
+        {
+          "item": "明朗之靴",
+          "id": 3158,
+          "basis": "situational"
+        },
+        {
+          "item": "舒瑞娅的战歌",
+          "id": 2065,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "星界游神",
+      "beforeFirst": "花晓之剑",
+      "afterFirst": "花晓之剑",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "花晓之剑",
+          "id": 124011,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "帝国指令",
+          "id": 4005,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "米凯尔的祝福",
+          "id": 3222,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "救赎",
+          "id": 3107,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "situational"
+        },
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "星籁歌姬",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "situational"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "暗夜猎手",
+      "beforeFirst": "破败王者之刃",
+      "afterFirst": "海妖杀手",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "海妖杀手",
+          "id": 6672,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "鬼索的狂暴之刃",
+          "id": 3124,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "situational"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "暗裔剑魔",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "焚天",
+          "id": 6610,
+          "basis": "situational"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "暗黑元首",
+      "beforeFirst": "影焰",
+      "afterFirst": "卢登的回声",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        },
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "暮光之眼",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        },
+        {
+          "item": "巨型九头蛇",
+          "id": 3748,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "暮光星灵",
+      "beforeFirst": "卢登的回声",
+      "afterFirst": "卢登的回声",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "巫妖之祸",
+          "id": 3100,
+          "basis": "situational"
+        },
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "暴怒骑士",
+      "beforeFirst": "心之钢",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "巨型九头蛇",
+          "id": 3748,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "暴走萝莉",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢安娜的飓风",
+          "id": 3085,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "situational"
+        },
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "曙光女神",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "璀璨回响",
+          "id": 6664,
+          "basis": "situational"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "未来守护者",
+      "beforeFirst": "狂妄",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "situational"
+        },
+        {
+          "item": "电震涡流剑",
+          "id": 6699,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "机械公敌",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "正义天使",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "育恩塔尔荒野箭",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢安娜的飓风",
+          "id": 3085,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        },
+        {
+          "item": "纳什之牙",
+          "id": 3115,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "正义巨像",
+      "beforeFirst": "心之钢",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "武器大师",
+      "beforeFirst": "黄昏与黎明",
+      "afterFirst": "黄昏与黎明",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黄昏与黎明",
+          "id": 2510,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "中娅沙漏",
+          "id": 3157,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "situational"
+        },
+        {
+          "item": "焚天",
+          "id": 6610,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "死亡颂唱者",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "殇之木乃伊",
+      "beforeFirst": "心之钢",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "基克的聚合",
+          "id": 3050,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "残月之肃",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "海克斯镜片 C44",
+          "id": 2523,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        },
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "永恒梦魇",
+      "beforeFirst": "公理圆弧",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "永猎双子",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "饮血剑",
+          "id": 3072,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "situational"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "沙漠死神",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "三相之力",
+          "id": 3078,
+          "basis": "situational"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "沙漠玫瑰",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "饮血剑",
+          "id": 3072,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        },
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "沙漠皇帝",
+      "beforeFirst": "纳什之牙",
+      "afterFirst": "纳什之牙",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "纳什之牙",
+          "id": 3115,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "situational"
+        },
+        {
+          "item": "中娅沙漏",
+          "id": 3157,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "河流之王",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "千变者贾修",
+          "id": 6665,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黄昏与黎明",
+          "id": 2510,
+          "basis": "situational"
+        },
+        {
+          "item": "轻灵之靴",
+          "id": 3009,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "法外狂徒",
+      "beforeFirst": "收集者",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "海克斯镜片 C44",
+          "id": 2523,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "situational"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "流光镜影",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "海兽祭司",
+      "beforeFirst": "心之钢",
+      "afterFirst": "公理圆弧",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "海洋之灾",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "夺萃之镰",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "夺萃之镰",
+          "id": 3508,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "situational"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "涤魂圣枪",
+      "beforeFirst": "斯塔缇克电刃",
+      "afterFirst": "斯塔缇克电刃",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "斯塔缇克电刃",
+          "id": 3087,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "situational"
+        },
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "深海泰坦",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "班德尔音管",
+          "id": 2524,
+          "basis": "situational"
+        },
+        {
+          "item": "振奋盔甲",
+          "id": 3065,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "深渊巨口",
+      "beforeFirst": "破败王者之刃",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "视界专注",
+          "id": 4628,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "魔宗",
+          "id": 3004,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "situational"
+        },
+        {
+          "item": "卢安娜的飓风",
+          "id": 3085,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "潮汐海灵",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "风暴狂涌",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "巫妖之祸",
+          "id": 3100,
+          "basis": "situational"
+        },
+        {
+          "item": "中娅沙漏",
+          "id": 3157,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "灵罗娃娃",
+      "beforeFirst": "黄昏与黎明",
+      "afterFirst": "纳什之牙",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "纳什之牙",
+          "id": 3115,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黄昏与黎明",
+          "id": 2510,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "炼金术士",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "situational"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "炼金男爵",
+      "beforeFirst": "帝国指令",
+      "afterFirst": "基克的聚合",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "基克的聚合",
+          "id": 3050,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "班德尔音管",
+          "id": 2524,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "凛冬之临",
+          "id": 3119,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "帝国指令",
+          "id": 4005,
+          "basis": "situational"
+        },
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "炽炎雏龙",
+      "beforeFirst": "夺萃之镰",
+      "afterFirst": "夺萃之镰",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "夺萃之镰",
+          "id": 3508,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "疾射火炮",
+          "id": 3094,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "熔岩巨兽",
+      "beforeFirst": "心之钢",
+      "afterFirst": "基克的聚合",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "基克的聚合",
+          "id": 3050,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "日炎圣盾",
+          "id": 3068,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "爆破鬼才",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "视界专注",
+          "id": 4628,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "牛头酋长",
+      "beforeFirst": "心之钢",
+      "afterFirst": "班德尔音管",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "班德尔音管",
+          "id": 2524,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "千变者贾修",
+          "id": 6665,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "璀璨回响",
+          "id": 6664,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "牧魂人",
+      "beforeFirst": "心之钢",
+      "afterFirst": "三相之力",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "三相之力",
+          "id": 3078,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "焚天",
+          "id": 6610,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "冰脉护手",
+          "id": 6662,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "狂厄蔷薇",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "situational"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "狂战士",
+      "beforeFirst": "海克斯注力刚壁",
+      "afterFirst": "海克斯注力刚壁",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "海克斯注力刚壁",
+          "id": 3073,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "挺进破坏者",
+          "id": 6631,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "猎魔人弩箭",
+          "id": 2512,
+          "basis": "situational"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "狂暴之心",
+      "beforeFirst": "影焰",
+      "afterFirst": "影焰",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "海克斯科技火箭腰带",
+          "id": 3152,
+          "basis": "situational"
+        },
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "狂野女猎手",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "situational"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "猩红收割者",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "situational"
+        },
+        {
+          "item": "星界驱驰",
+          "id": 4629,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "琴瑟仙女",
+      "beforeFirst": "月石再生器",
+      "afterFirst": "月石再生器",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黎明核心",
+          "id": 6621,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "米凯尔的祝福",
+          "id": 3222,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "流水法杖",
+          "id": 6616,
+          "basis": "situational"
+        },
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "situational"
+        },
+        {
+          "item": "明朗之靴",
+          "id": 3158,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "瓦洛兰之盾",
+      "beforeFirst": "心之钢",
+      "afterFirst": "凛冬之临",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "凛冬之临",
+          "id": 3119,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "花晓之剑",
+          "id": 124011,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "生化魔人",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "振奋盔甲",
+          "id": 3065,
+          "basis": "situational"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "疾风剑豪",
+      "beforeFirst": "毁坏仪式",
+      "afterFirst": "育恩塔尔荒野箭",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "毁坏仪式",
+          "id": 123430,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "振奋盔甲",
+          "id": 3065,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "幻影之舞",
+          "id": 3046,
+          "basis": "situational"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "痛苦之拥",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "风暴狂涌",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "巫妖之祸",
+          "id": 3100,
+          "basis": "situational"
+        },
+        {
+          "item": "中娅沙漏",
+          "id": 3157,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "瘟疫之源",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢安娜的飓风",
+          "id": 3085,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "situational"
+        },
+        {
+          "item": "饮血剑",
+          "id": 3072,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "百裂冥犬",
+      "beforeFirst": "狂妄",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "situational"
+        },
+        {
+          "item": "电震涡流剑",
+          "id": 6699,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "皎月女神",
+      "beforeFirst": "影焰",
+      "afterFirst": "风暴狂涌",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "黄昏与黎明",
+          "id": 2510,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "皮城女警",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "育恩塔尔荒野箭",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "饮血剑",
+          "id": 3072,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        },
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "皮城执法官",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "盲僧",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "星蚀",
+          "id": 6692,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "破败之王",
+      "beforeFirst": "收集者",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "不朽盾弓",
+          "id": 6673,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "祖安怒兽",
+      "beforeFirst": "心之钢",
+      "afterFirst": "斯塔缇克电刃",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "斯塔缇克电刃",
+          "id": 3087,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "巨型九头蛇",
+          "id": 3748,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "祖安狂人",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "巨型九头蛇",
+          "id": 3748,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "轻灵之靴",
+          "id": 3009,
+          "basis": "situational"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "祖安花火",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "育恩塔尔荒野箭",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "猎魔人弩箭",
+          "id": 2512,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢安娜的飓风",
+          "id": 3085,
+          "basis": "situational"
+        },
+        {
+          "item": "饮血剑",
+          "id": 3072,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "离群之刺",
+      "beforeFirst": "影焰",
+      "afterFirst": "风暴狂涌",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "巫妖之祸",
+          "id": 3100,
+          "basis": "situational"
+        },
+        {
+          "item": "海克斯科技枪刃",
+          "id": 3146,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "符文法师",
+      "beforeFirst": "时光之杖",
+      "afterFirst": "时光之杖",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "大天使之杖",
+          "id": 3003,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "凛冬之临",
+          "id": 3119,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "纳祖芒荣耀",
+      "beforeFirst": "千变者贾修",
+      "afterFirst": "兰顿之兆",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "千变者贾修",
+          "id": 6665,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "振奋盔甲",
+          "id": 3065,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "翠神",
+      "beforeFirst": "月石再生器",
+      "afterFirst": "月石再生器",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黎明核心",
+          "id": 6621,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "班德尔音管",
+          "id": 2524,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "situational"
+        },
+        {
+          "item": "流水法杖",
+          "id": 6616,
+          "basis": "situational"
+        },
+        {
+          "item": "明朗之靴",
+          "id": 3158,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "腕豪",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "朔极之矛",
+          "id": 3161,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "situational"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "英勇投弹手",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "situational"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "荆棘之兴",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "荒漠屠夫",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "焚天",
+          "id": 6610,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "situational"
+        },
+        {
+          "item": "朔极之矛",
+          "id": 3161,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "荣耀行刑官",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "饮血剑",
+          "id": 3072,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        },
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "蒸汽机器人",
+      "beforeFirst": "明朗之靴",
+      "afterFirst": "班德尔音管",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "班德尔音管",
+          "id": 2524,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "凛冬之临",
+          "id": 3119,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "基克的聚合",
+          "id": 3050,
+          "basis": "situational"
+        },
+        {
+          "item": "钢铁烈阳之匣",
+          "id": 3190,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "虚空之女",
+      "beforeFirst": "黄昏与黎明",
+      "afterFirst": "海妖杀手",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "海妖杀手",
+          "id": 6672,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "鬼索的狂暴之刃",
+          "id": 3124,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "纳什之牙",
+          "id": 3115,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黄昏与黎明",
+          "id": 2510,
+          "basis": "situational"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "虚空之眼",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "虚空先知",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "虚空女皇",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "situational"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "虚空恐惧",
+      "beforeFirst": "心之钢",
+      "afterFirst": "心之钢",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "situational"
+        },
+        {
+          "item": "璀璨回响",
+          "id": 6664,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "虚空掠夺者",
+      "beforeFirst": "狂妄",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "电震涡流剑",
+          "id": 6699,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "situational"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "虚空行者",
+      "beforeFirst": "时光之杖",
+      "afterFirst": "时光之杖",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "大天使之杖",
+          "id": 3003,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "situational"
+        },
+        {
+          "item": "凛冬之临",
+          "id": 3119,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "虚空遁地兽",
+      "beforeFirst": "心之钢",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "巨型九头蛇",
+          "id": 3748,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "蛮族之王",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "公理圆弧",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "猎魔人弩箭",
+          "id": 2512,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "破败王者之刃",
+          "id": 3153,
+          "basis": "situational"
+        },
+        {
+          "item": "幻影之舞",
+          "id": 3046,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "蜘蛛女皇",
+      "beforeFirst": "影焰",
+      "afterFirst": "卢登的回声",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "巫妖之祸",
+          "id": 3100,
+          "basis": "situational"
+        },
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "血港鬼影",
+      "beforeFirst": "狂妄",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "电震涡流剑",
+          "id": 6699,
+          "basis": "situational"
+        },
+        {
+          "item": "轻灵之靴",
+          "id": 3009,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "解脱者",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "海克斯科技火箭腰带",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "海克斯科技火箭腰带",
+          "id": 3152,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "中娅沙漏",
+          "id": 3157,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "situational"
+        },
+        {
+          "item": "巫妖之祸",
+          "id": 3100,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "诡术妖姬",
+      "beforeFirst": "影焰",
+      "afterFirst": "风暴狂涌",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "风暴狂涌",
+          "id": 4646,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "situational"
+        },
+        {
+          "item": "中娅沙漏",
+          "id": 3157,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "诺克萨斯之手",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "焚天",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "焚天",
+          "id": 6610,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "朔极之矛",
+          "id": 3161,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "诺克萨斯统领",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "残疫",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "中娅沙漏",
+          "id": 3157,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "situational"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "赏金猎人",
+      "beforeFirst": "黯炎火炬",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "迅捷斥候",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "斯塔缇克电刃",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "斯塔缇克电刃",
+          "id": 3087,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "situational"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "远古巫灵",
+      "beforeFirst": "卢登的回声",
+      "afterFirst": "卢登的回声",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "视界专注",
+          "id": 4628,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "远古恐惧",
+      "beforeFirst": "残疫",
+      "afterFirst": "残疫",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "中娅沙漏",
+          "id": 3157,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "situational"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "迷失之牙",
+      "beforeFirst": "心之钢",
+      "afterFirst": "三相之力",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "三相之力",
+          "id": 3078,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "焚天",
+          "id": 6610,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黑色切割者",
+          "id": 3071,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "逆羽",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "育恩塔尔荒野箭",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "育恩塔尔荒野箭",
+          "id": 3032,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "海克斯镜片 C44",
+          "id": 2523,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        },
+        {
+          "item": "纳沃利烁刃",
+          "id": 6675,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "邪恶小法师",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "卢登的回声",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "situational"
+        },
+        {
+          "item": "轻灵之靴",
+          "id": 3009,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "酒桶",
+      "beforeFirst": "灭世者的死亡之帽",
+      "afterFirst": "卢登的回声",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "卢登的回声",
+          "id": 6655,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "巫妖之祸",
+          "id": 3100,
+          "basis": "situational"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "铁血狼母",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "狂妄",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "狂妄",
+          "id": 126697,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "电震涡流剑",
+          "id": 6699,
+          "basis": "situational"
+        },
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "铁铠冥魂",
+      "beforeFirst": "裂隙制造者",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "海克斯注力刚壁",
+          "id": 3073,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "振奋盔甲",
+          "id": 3065,
+          "basis": "situational"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "铸星龙王",
+      "beforeFirst": "瑞莱的冰晶节杖",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "镕铁少女",
+      "beforeFirst": "心之钢",
+      "afterFirst": "基克的聚合",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "基克的聚合",
+          "id": 3050,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "明朗之靴",
+          "id": 3158,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "雪原双子",
+      "beforeFirst": "振奋盔甲",
+      "afterFirst": "振奋盔甲",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "振奋盔甲",
+          "id": 3065,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰顿之兆",
+          "id": 3143,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "班德尔音管",
+          "id": 2524,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "原生质护带",
+          "id": 2525,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "situational"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "青钢影",
+      "beforeFirst": "三相之力",
+      "afterFirst": "三相之力",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "三相之力",
+          "id": 3078,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "朔极之矛",
+          "id": 3161,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无穷饥渴",
+          "id": 2517,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "焚天",
+          "id": 6610,
+          "basis": "situational"
+        },
+        {
+          "item": "斯特拉克的挑战护手",
+          "id": 3053,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "风暴之怒",
+      "beforeFirst": "月石再生器",
+      "afterFirst": "月石再生器",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "帝国指令",
+          "id": 4005,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黎明核心",
+          "id": 6621,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "situational"
+        },
+        {
+          "item": "流水法杖",
+          "id": 6616,
+          "basis": "situational"
+        },
+        {
+          "item": "明朗之靴",
+          "id": 3158,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "魂锁典狱长",
+      "beforeFirst": "心之钢",
+      "afterFirst": "班德尔音管",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "班德尔音管",
+          "id": 2524,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "败魔",
+          "id": 2504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "千变者贾修",
+          "id": 6665,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "狂徒铠甲",
+          "id": 3083,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "魔法猫咪",
+      "beforeFirst": "月石再生器",
+      "afterFirst": "炽热香炉",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "炽热香炉",
+          "id": 3504,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "月石再生器",
+          "id": 6617,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黎明核心",
+          "id": 6621,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "流水法杖",
+          "id": 6616,
+          "basis": "situational"
+        },
+        {
+          "item": "米凯尔的祝福",
+          "id": 3222,
+          "basis": "situational"
+        },
+        {
+          "item": "救赎",
+          "id": 3107,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "魔蛇之拥",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "黯炎火炬",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "瑞莱的冰晶节杖",
+          "id": 3116,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "时光之杖",
+          "id": 6657,
+          "basis": "situational"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "麦林炮手",
+      "beforeFirst": "无尽之刃",
+      "afterFirst": "收集者",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "收集者",
+          "id": 6676,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "纳沃利烁刃",
+          "id": 6675,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "界弓",
+          "id": 3302,
+          "basis": "situational"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "黑暗之女",
+      "beforeFirst": "残疫",
+      "afterFirst": "残疫",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "残疫",
+          "id": 3118,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "影焰",
+          "id": 4645,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "虚空之杖",
+          "id": 3135,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "situational"
+        },
+        {
+          "item": "黯炎火炬",
+          "id": 2503,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "齐天大圣",
+      "beforeFirst": "死亡之舞",
+      "afterFirst": "公理圆弧",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "公理圆弧",
+          "id": 6696,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "死亡之舞",
+          "id": 6333,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "多米尼克领主的致意",
+          "id": 3036,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "无尽之刃",
+          "id": 3031,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "心之钢",
+          "id": 3084,
+          "basis": "situational"
+        },
+        {
+          "item": "焚天",
+          "id": 6610,
+          "basis": "situational"
+        }
+      ]
+    },
+    {
+      "hero": "龙血武姬",
+      "beforeFirst": "兰德里的折磨",
+      "afterFirst": "兰德里的折磨",
+      "basis": "formula_reference",
+      "steps": [
+        {
+          "item": "兰德里的折磨",
+          "id": 6653,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "黄昏与黎明",
+          "id": 2510,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "裂隙制造者",
+          "id": 4633,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "霸王血铠",
+          "id": 2501,
+          "basis": "formula_reference"
+        },
+        {
+          "item": "灭世者的死亡之帽",
+          "id": 3089,
+          "basis": "situational"
+        },
+        {
+          "item": "放血者的诅咒",
+          "id": 8010,
+          "basis": "situational"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "full-three-cards.png",
+      "expected": [
+        "裁决使",
+        "超凡邪恶",
+        "神射法师"
+      ],
+      "before": {
+        "slots": [
+          "待识别",
+          "超凡邪恶",
+          "神射法师"
+        ],
+        "seconds": 1.187,
+        "matched": 2
+      },
+      "after": {
+        "slots": [
+          "未收录：裁决使",
+          "超凡邪恶",
+          "神射法师"
+        ],
+        "seconds": 0.374,
+        "matched": 3
+      }
+    },
+    {
+      "file": "partial-one-card.png",
+      "expected": [
+        "不祥契约"
+      ],
+      "before": {
+        "slots": [
+          "待识别",
+          "待识别",
+          "待识别"
+        ],
+        "seconds": 1.622,
+        "matched": 0
+      },
+      "after": {
+        "slots": [
+          "不祥契约",
+          "待识别",
+          "待识别"
+        ],
+        "seconds": 0.064,
+        "matched": 1
+      }
+    },
+    {
+      "file": "no-match-title-activity.png",
+      "expected": [],
+      "before": {
+        "slots": [
+          "待识别",
+          "待识别",
+          "待识别"
+        ],
+        "seconds": 1.965,
+        "matched": 0
+      },
+      "after": {
+        "slots": [
+          "待识别",
+          "待识别",
+          "待识别"
+        ],
+        "seconds": 0.074,
+        "matched": 0
+      }
+    }
+  ]
+}

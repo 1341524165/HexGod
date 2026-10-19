@@ -1,0 +1,14 @@
+.cache/
+runtime/
+logs/
+*.log
+connection-status.json
+settings.json
+backend.log
+overlay-events.log
+*.exe
+*.exe.config
+*.pdb
+__pycache__/
+*.pyc
+models/**/*.onnx

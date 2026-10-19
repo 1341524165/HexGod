@@ -1,0 +1,7 @@
+# Bundled Windows x64 Python 3.12 runtime; validated by verify.ps1.
+numpy==2.4.3
+onnxruntime==1.24.4
+Pillow==12.1.1
+opencv-python-headless==4.10.0.84
+mss==10.1.0
+rapidfuzz==3.14.3
