@@ -1,6 +1,6 @@
 # Operation and local data
 
-Launch `build/bin/hexgod.exe`, use the desktop shortcut, or run `scripts/start.ps1`. Keep the full project folder together; the EXE locates the root by project metadata. The window and overlay remain read-only assistants and never send game input.
+Launch the root “启动 hexgod” shortcut, double-click the portable `启动 hexgod.cmd`, use the desktop shortcut, or run `scripts/start.ps1`. The root CMD uses its own directory and bootstraps the local interpreter; it does not require a fixed drive letter. Generated `.lnk` files are local conveniences and are ignored by Git. Keep the full project folder together; the EXE locates the root by project metadata. The window and overlay remain read-only assistants and never send game input.
 
 Personal files are under `var`:
 

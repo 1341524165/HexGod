@@ -1,6 +1,6 @@
 # Repository maintenance rules
 
-- Keep the root for project metadata, the solution and README. Python application code belongs in `src/hexgod`, WPF code in `src/desktop`, operational commands in `scripts`, and tests in their respective `tests` layer.
+- Keep the root for project metadata, the solution, README and the user-facing launch command/shortcut. Python application code belongs in `src/hexgod`, WPF code in `src/desktop`, operational commands in `scripts`, and tests in their respective `tests` layer.
 - Use package imports and `python -m hexgod`. Do not add `sys.path` mutations, flat compatibility modules, absolute installation paths or implicit imports from the current working directory.
 - Python paths are owned by `hexgod.paths`; desktop paths by `ProjectPaths`. Read-only data belongs in `resources`, model assets in `assets/models`, personal state/logs in `var`, and generated output in `build` or `artifacts`.
 - Keep production and legacy fixture providers separate. Production must not import the legacy provider. Do not copy sparse combo statistics into single-item or conditional win rates.

@@ -4,7 +4,7 @@ Windows 海克斯大乱斗浮窗助手，WPF 桌面端与 Python OCR／推荐服
 
 ## 启动与开发
 
-双击 `build/bin/hexgod.exe` 或桌面的 hexgod 快捷方式；也可执行：
+双击项目最外层的 **启动 hexgod** 快捷方式即可。根目录也保留 `启动 hexgod.cmd`，它使用相对路径，移动整个文件夹后仍可启动。开发时也可执行：
 
 ```powershell
 .\scripts\start.ps1
