@@ -1,6 +1,6 @@
 # Repository maintenance rules
 
-- Keep the root for project metadata, the solution, README and the user-facing launch command/shortcut. Python application code belongs in `src/hexgod`, WPF code in `src/desktop`, operational commands in `scripts`, and tests in their respective `tests` layer.
+- Keep the root for project metadata, the solution, README and the generated user-facing `hexgod.exe` / `hexgod.exe.config`. Keep the launch entrypoint simple: release builds must refresh the root executable and its configuration; verification builds must not overwrite it. Python application code belongs in `src/hexgod`, WPF code in `src/desktop`, operational commands in `scripts`, and tests in their respective `tests` layer.
 - Use package imports and `python -m hexgod`. Do not add `sys.path` mutations, flat compatibility modules, absolute installation paths or implicit imports from the current working directory.
 - Python paths are owned by `hexgod.paths`; desktop paths by `ProjectPaths`. Read-only data belongs in `resources`, model assets in `assets/models`, personal state/logs in `var`, and generated output in `build` or `artifacts`.
 - Keep production and legacy fixture providers separate. Production must not import the legacy provider. Do not copy sparse combo statistics into single-item or conditional win rates.
@@ -9,3 +9,4 @@
 - Keep `runtime`, model binaries, personal settings, logs, build output and caches out of Git. Preserve upstream fixture/model provenance and source-data hashes.
 - Keep historical material under `docs/history`; do not revive old one-off migration scripts as production entrypoints.
 - Use the existing local Git repository. Do not configure remotes or publish without the user's instruction.
+- Write commit messages in Conventional Commits format: `<type>(<optional-scope>): <summary>`. Use an appropriate type such as `feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `build`, `ci`, `chore` or `revert`; keep the summary concise and describe the concrete change. For example, `fix(tracking): preserve confirmed augment selections`. Add a body explaining the reason and validation when the change needs context.

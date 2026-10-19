@@ -11,3 +11,12 @@ $output = Join-Path $outputDir $OutputName
 if ($LASTEXITCODE -ne 0) { throw 'Desktop compilation failed.' }
 Copy-Item -LiteralPath (Join-Path $projectRoot 'src\desktop\App.config') -Destination ($output + '.config') -Force
 Write-Output "Built: $output"
+if ($OutputName -eq 'hexgod.exe') {
+    $python = Join-Path $projectRoot 'runtime\python.exe'
+    & $python -X utf8 -B (Join-Path $PSScriptRoot 'bootstrap_runtime.py')
+    if ($LASTEXITCODE -ne 0) { throw 'Runtime setup failed.' }
+    $rootApplication = Join-Path $projectRoot 'hexgod.exe'
+    Copy-Item -LiteralPath $output -Destination $rootApplication -Force
+    Copy-Item -LiteralPath ($output + '.config') -Destination ($rootApplication + '.config') -Force
+    Write-Output "Launch: $rootApplication"
+}

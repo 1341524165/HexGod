@@ -9,11 +9,11 @@ Use Windows x64 with .NET Framework 4.x and Python 3.12. The full local folder a
 .\scripts\start.ps1
 ```
 
-The verification command builds `build/bin/hexgod-verify.exe`, so it does not overwrite an already running desktop application. For a release update, close the application and run `scripts/build.ps1`.
+The verification command builds `build/bin/hexgod-verify.exe`, so it does not overwrite an already running desktop application. For a release update, close the application and run `scripts/build.ps1`. It prepares the bundled interpreter and refreshes the root `hexgod.exe` and `hexgod.exe.config`; verification builds do not replace this user-facing entrypoint.
 
 `bootstrap_runtime.py` only writes a relative source registration into the bundled interpreter and creates ignored output directories. It does not access the network or change global Python configuration. A normal Python environment can instead use `python -m pip install -e .`; package dependencies and the version live in `pyproject.toml` / `src/hexgod/__init__.py`.
 
-- `scripts/build.ps1`: desktop build to `build/bin/hexgod.exe`.
+- `scripts/build.ps1`: desktop build to `build/bin/hexgod.exe`, then publish a copy and its runtime configuration to the project root.
 - `scripts/smoke_overlay.ps1`: legacy/production WPF scenarios and passive input-state tests; it never opens a game or injects input.
 - `scripts/audit_mechanics.py`: all-hero/augment/inventory mechanism checks; writes `artifacts/reports`.
 - `scripts/audit_recordings.py`: historical summaries separated by evidence kind; writes `artifacts/reports/recording-audit.json`.
