@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hexgod"
+dynamic = ["version"]
+description = "Windows ARAM Mayhem overlay, OCR and recommendation service"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy==2.4.3", "onnxruntime==1.24.4", "Pillow==12.1.1",
+  "opencv-python-headless==4.10.0.84", "mss==10.1.0", "rapidfuzz==3.14.3",
+]
+
+[project.scripts]
+hexgod-backend = "hexgod.api.backend:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["hexgod*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "hexgod.__version__"}
