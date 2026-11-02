@@ -21,6 +21,46 @@ def fixture():
 
 
 class AutomaticSelectionTests(unittest.TestCase):
+    def test_hover_inference_waits_five_seconds_and_revokes_when_panel_returns(self):
+        geometry = live_geometry(*fixture())
+        hover = dict(x=1060, y=670, hwnd=41, atMs=1200, geometry=geometry)
+        tracker = AutomaticSelectionTracker()
+        tracker.observe_frame(geometry, foreground_game=True, frame_detected=True, hwnd=41, at_ms=1000)
+        self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=1300, hover=hover))
+        for at in (2300, 3300, 4300, 5300, 6299):
+            self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=at))
+        self.assertEqual(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=6300), '炼狱导管')
+        self.assertEqual(tracker.selection_source, 'hover')
+        tracker.observe_frame(geometry, foreground_game=True, frame_detected=True, hwnd=41, at_ms=7000)
+        self.assertEqual(tracker.revoked_selection, '炼狱导管')
+        for invalid in (dict(hover, hwnd=99), dict(hover, atMs=1), dict(hover, y=1200)):
+            tracker = AutomaticSelectionTracker()
+            tracker.observe_frame(geometry, foreground_game=True, frame_detected=True, hwnd=41, at_ms=1000)
+            self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=1800, hover=invalid))
+            self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=2300))
+
+    def test_hover_pending_is_cancelled_if_panel_returns(self):
+        geometry = live_geometry(*fixture())
+        tracker = AutomaticSelectionTracker()
+        tracker.observe_frame(geometry, foreground_game=True, frame_detected=True, hwnd=41, at_ms=1000)
+        hover = dict(x=1060, y=670, hwnd=41, atMs=1200, geometry=geometry)
+        tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=1300, hover=hover)
+        tracker.observe_frame(geometry, foreground_game=True, frame_detected=True, hwnd=41, at_ms=1400)
+        self.assertIsNone(tracker.pending)
+        self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=2000))
+        self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=2600))
+
+    def test_hover_gap_restarts_five_second_window(self):
+        geometry = live_geometry(*fixture())
+        tracker = AutomaticSelectionTracker()
+        tracker.observe_frame(geometry, foreground_game=True, frame_detected=True, hwnd=41, at_ms=1000)
+        hover = dict(x=1060, y=670, hwnd=41, atMs=1200, geometry=geometry)
+        tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=1300, hover=hover)
+        self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=5500))
+        for at in (6500, 7500, 8500, 9500, 10499):
+            self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=at))
+        self.assertEqual(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=10500), '炼狱导管')
+
     def test_stale_or_repeated_capture_cannot_confirm_a_click(self):
         geometry=live_geometry(*fixture())
         tracker=AutomaticSelectionTracker()
@@ -119,6 +159,41 @@ class AutomaticSelectionTests(unittest.TestCase):
             self.assertIsNone(backend.dispatch({"action": "ocr", "hero": "复仇焰魂"})["autoSelection"])
             self.assertEqual(backend.dispatch({"action": "ocr", "hero": "复仇焰魂"})["autoSelection"],
                              "炼狱导管")
+
+    def test_backend_journals_and_revokes_hover_inference(self):
+        import tempfile
+        from hexgod.tracking.journal import MatchJournal
+        backend = Backend(use_remote=False)
+        timestamp = int(time.time() * 1000)
+        base, _ = fixture()
+        base['capture_context']['timestamp_ms'] = timestamp
+        names = ('虚幻武器', '炼狱导管', '老练狙神')
+        shown = dict(base, payloads=[{'lines': [{'text': name, 'score': .99}]} for name in names],
+                     frame_quality={'probable_augment_frame': True},
+                     slot_candidates=[[{'text': name, 'confidence': 99, 'title_like': True,
+                                        'image_quality': 100, 'variant_index': 0}] for name in names])
+        blanks = [dict(capture_context=dict(base['capture_context'], timestamp_ms=timestamp + delta),
+                       anchor_detection={'detected': False}, frame_quality={'probable_augment_frame': False}, payloads=[])
+                  for delta in (500, 1500, 2500, 3500, 4500, 5500)]
+        restored = dict(shown, capture_context=dict(base['capture_context'], timestamp_ms=timestamp + 6500))
+        with tempfile.TemporaryDirectory() as folder:
+            backend.ocr.journal = MatchJournal(root=Path(folder))
+            with patch.object(backend.ocr, '_scan', side_effect=[shown, *blanks, restored]):
+                request = {'action': 'ocr', 'hero': '复仇焰魂', 'contextId': 'match|hero', 'sessionKey': 'match'}
+                initial = backend.dispatch(request)
+                hover = {'x': 1060, 'y': 670, 'hwnd': 41, 'atMs': timestamp + 100,
+                         'geometry': initial['trackingGeometry']}
+                first = backend.dispatch(dict(request, hoverCandidate=hover))
+                self.assertIsNone(first['autoSelection'])
+                for _ in range(4): self.assertIsNone(backend.dispatch(request)['autoSelection'])
+                inferred = backend.dispatch(request)
+                self.assertEqual(inferred['autoSelection'], '炼狱导管')
+                self.assertEqual(inferred['selectionSource'], 'hover')
+                self.assertEqual(backend.ocr.journal.summary['inferred'], ['炼狱导管'])
+                restored_result = backend.dispatch(dict(request, owned=['炼狱导管']))
+                self.assertEqual(restored_result['revokedSelection'], '炼狱导管')
+                self.assertEqual(backend.ocr.journal.summary['inferred'], [])
+                self.assertEqual(backend.ocr.journal.summary['confirmed'], [])
 
 
 if __name__ == "__main__":

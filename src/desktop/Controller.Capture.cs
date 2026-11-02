@@ -51,13 +51,14 @@ namespace hexgod
             bool hideOverlayForCapture = overlayVisible && (!automatic || image != null || switchToGame);
             var oldState = Window.WindowState;
             string automaticallySelected = "";
+            string revokedSelection = "";
             try {
                 if (hideOverlayForCapture) { captureHidesOverlay = true; overlay.Hide(); }
                 if (restore) { Window.WindowState = WindowState.Minimized; await Task.Delay(2000); }
                 if (revision != heroRevision || closing) return;
                 if (image == null && queuedClick != null) {
                     var click = queuedClick; queuedClick = null;
-                    click["contextId"] = revision;
+                    click["contextId"] = MatchLogKey + "|" + hero;
                     click["sessionKey"] = MatchLogKey;
                     var pending = await backend.Request(click);
                     if (revision != heroRevision || closing) return;
@@ -67,7 +68,8 @@ namespace hexgod
                 bool openingProbe = liveContext != null && Json.N(liveContext, "gameTime") < 90 && ownedAugments.Count == 0;
                 var result = await backend.Request(Json.D("action", "ocr", "hero", hero, "image", image,
                     "preset", Convert.ToString(Find<ComboBox>("PresetCombo").SelectedItem), "owned", ownedAugments.ToArray(),
-                    "probeTitles", openingProbe || choiceView.Visible || selectionPending, "contextId", revision,
+                    "hoverCandidate", hoverCandidate,
+                    "probeTitles", openingProbe || choiceView.Visible || selectionPending, "contextId", image != null ? "offline|" + revision : MatchLogKey + "|" + hero,
                     "sessionKey", MatchLogKey, "evidenceKind", image != null ? "offline" :
                         GameWindowProbe.IsLocalFixture(liveGameHwnd) ? "desktop_fixture" : "live"));
                 if (revision != heroRevision || closing) return;
@@ -81,6 +83,7 @@ namespace hexgod
                     InvalidateRerolledSlots(trackingGeometry);
                     CorrelateBufferedClick(trackingGeometry);
                     automaticallySelected = Json.S(result, "autoSelection");
+                    revokedSelection = Json.S(result, "revokedSelection");
                     selectionPending = Json.B(result, "selectionPending");
                     overlayShowChoices = false;
                     choiceView.Observe(result, NowMs());
@@ -108,9 +111,15 @@ namespace hexgod
                     if (passive) busy = false; else SetBusy(false);
                 }
             }
+            if (automatic && revokedSelection.Length > 0 && !closing && revision == heroRevision) {
+                choiceView.Reset();
+                if (lastFrame != null) choiceView.Observe(lastFrame, NowMs());
+                await RemoveOwned(revokedSelection);
+                Status("选项重新出现，已撤销此前的推测：" + revokedSelection);
+            }
             if (automatic && automaticallySelected.Length > 0 && !closing && revision == heroRevision) {
                 await AddOwned(automaticallySelected);
-                if (ownedAugments.Contains(automaticallySelected)) Status("已自动记录你选择的海克斯：" + automaticallySelected);
+                if (ownedAugments.Contains(automaticallySelected)) Status((Json.S(lastFrame, "selectionSource") == "hover" ? "根据鼠标位置推测选择：" : "已自动记录你选择的海克斯：") + automaticallySelected);
             }
         }
         async Task ToggleAuto() {

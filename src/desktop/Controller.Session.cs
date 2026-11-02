@@ -18,6 +18,7 @@ namespace hexgod
         long nextCaptureAt;
         Dictionary<string, object> queuedClick;
         Dictionary<string, object> bufferedClick;
+        Dictionary<string, object> hoverCandidate;
         bool selectionPending;
         bool liveHeroUnknown;
         string lastHandledInputSource = "unknown";
@@ -50,7 +51,7 @@ namespace hexgod
         void ResetMatchContext() {
             ++heroRevision; ++buildRevision; // Invalidate before any await.
             choiceView.Reset();
-            trackingGeometry = null; queuedClick = null; bufferedClick = null; selectionPending = false;
+            trackingGeometry = null; queuedClick = null; bufferedClick = null; hoverCandidate = null; selectionPending = false;
             Array.Clear(slotInvalidatedAt, 0, slotInvalidatedAt.Length);
             // The game window outlives hero/round resets and is independently observed.
             matchStartMs = 0; nextCaptureAt = 0;
@@ -66,6 +67,21 @@ namespace hexgod
             Find<UniformGrid>("SynergyItemCards").Children.Clear();
             Find<StackPanel>("SynergyItemSection").Visibility = System.Windows.Visibility.Collapsed;
             Find<TextBlock>("BuildPath").Text = "本局状态已清空，等待重新同步。";
+        }
+
+        void SampleHover() {
+            WinPoint point;
+            if (!automatic || !ready || closing || !GameWindowProbe.IsForeground(liveGameHwnd)) {
+                hoverCandidate = null; return;
+            }
+            if (hoverCandidate != null && NowMs() - Json.N(hoverCandidate, "atMs") > 1500) hoverCandidate = null;
+            if (trackingGeometry == null || !GetCursorPos(out point)) return;
+            if (Json.A(trackingGeometry, "rerollHitboxes").Any(raw => ContainsPoint(raw, point.X, point.Y))) {
+                hoverCandidate = null; return;
+            }
+            if (!Json.A(trackingGeometry, "hitboxes").Any(raw => ContainsPoint(raw, point.X, point.Y))) return;
+            hoverCandidate = Json.D("x", point.X, "y", point.Y, "hwnd", liveGameHwnd,
+                "atMs", NowMs(), "geometry", trackingGeometry);
         }
 
         void BufferGameClick(int x, int y, long window, long at) {

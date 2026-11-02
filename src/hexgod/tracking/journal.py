@@ -32,7 +32,7 @@ class MatchJournal:
         kind = evidence_kind or ('offline' if session == 'offline' else self.evidence_kind)
         self.summary = {'session': session, 'hero': hero, 'evidenceKind': kind,
                         'frames': 0, 'panelFrames': 0, 'completeFrames': 0,
-                        'partialFrames': 0, 'clicks': 0, 'confirmed': [], 'unresolved': 0, 'observedTitles': []}
+                        'partialFrames': 0, 'clicks': 0, 'confirmed': [], 'inferred': [], 'unresolved': 0, 'observedTitles': []}
         self.last_selection = None
         from hexgod.platform.display import monitors
         self.event('session_started', monitors=monitors(), backendVersion='0.18',
@@ -54,6 +54,7 @@ class MatchJournal:
             f"本局：{self.session}\n选项画面：{self.summary['panelFrames']} 帧；完整识别：{self.summary['completeFrames']} 帧；"
             f"部分识别：{self.summary['partialFrames']} 帧\n卡片点击：{self.summary['clicks']} 次\n"
             f"已确认选择：{len(confirmed)} 项 {'、'.join(confirmed)}\n"
+            f"悬停推测选择：{len(self.summary['inferred'])} 项 {'、'.join(self.summary['inferred'])}\n"
             f"未完成确认：{self.summary['unresolved']} 次\n"
             "events.jsonl 中包含每张卡原文、刷新、点击判定和屏幕坐标；title-*.jpg 是诊断用标题裁图。\n",
             encoding='utf-8-sig')

@@ -287,14 +287,26 @@ class OcrService:
                 result["autoSelection"] = self.selection_tracker.observe_frame(
                     geometry, foreground_game=bool(context.get("foreground_matches_lol")),
                     frame_detected=frame_detected, hwnd=context.get("lol_window_hwnd"),
-                    at_ms=result["capturedAtMs"])
+                    at_ms=result["capturedAtMs"], hover=request.get('hoverCandidate'))
                 result['selectionPending'] = self.selection_tracker.pending is not None
                 result["gameWindowHwnd"] = context.get("lol_window_hwnd") if context.get("foreground_matches_lol") else None
                 result["autoTrackingReady"] = geometry is not None
                 result['selectionDiagnostic'] = self.selection_tracker.last_event
+                result['revokedSelection'] = self.selection_tracker.revoked_selection
+                if result['revokedSelection']:
+                    name = result['revokedSelection']
+                    if name in self.journal.summary.get('inferred', []):
+                        self.journal.summary['inferred'].remove(name)
+                    self.journal.event('selection_inference_revoked', name=name)
                 if result['autoSelection']:
-                    self.journal.summary['confirmed'].append(result['autoSelection'])
-                    self.journal.event('selection_confirmed', name=result['autoSelection'])
+                    source = self.selection_tracker.selection_source
+                    result['selectionSource'] = source
+                    if source == 'hover':
+                        self.journal.summary.setdefault('inferred', []).append(result['autoSelection'])
+                        self.journal.event('selection_inferred', name=result['autoSelection'], source='hover')
+                    else:
+                        self.journal.summary['confirmed'].append(result['autoSelection'])
+                        self.journal.event('selection_confirmed', name=result['autoSelection'])
                 self.journal.frame(result, payload)
             if not result["matchedCount"]:
                 result["message"] = (

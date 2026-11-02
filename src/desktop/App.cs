@@ -292,6 +292,7 @@ namespace hexgod
             await ChangeOwned(new string[0], true);
         }
         Task ObserveClick() {
+            SampleHover();
             GameClickListener.Click click;
             while (clickListener.TryRead(out click)) {
                 lastHandledInputSource = click.Source;

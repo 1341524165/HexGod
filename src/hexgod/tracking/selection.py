@@ -63,6 +63,9 @@ class AutomaticSelectionTracker:
     def __init__(self):
         self.frame = None
         self.pending = None
+        self.selection_source = None
+        self.provisional = None
+        self.revoked_selection = None
         self.misses = 0
         self.first_miss = 0
         self.last_frame_at = 0
@@ -85,17 +88,32 @@ class AutomaticSelectionTracker:
             self.last_event = 'clicked_title_unrecognized'
             return None
         self.pending = {"name": frame["names"][slots[0]], "atMs": at_ms,
-                        "windowHwnd": hwnd, "slot": slots[0], "signature": tuple(frame["names"])}
+                        "windowHwnd": hwnd, "slot": slots[0], "signature": tuple(frame["names"]), "source": "click"}
         self.last_event = 'click_accepted_waiting_for_disappearance'
         self.frame = frame
         self.misses = 0
         self.first_miss = 0
         return self.pending["name"]
 
-    def observe_frame(self, geometry, *, foreground_game, frame_detected, hwnd, at_ms):
+    def observe_frame(self, geometry, *, foreground_game, frame_detected, hwnd, at_ms, hover=None):
         if at_ms <= self.last_frame_at:
             return None
+        previous_at = self.last_frame_at
         self.last_frame_at = at_ms
+        self.revoked_selection = None
+        if self.pending and self.pending.get('source') == 'hover' and (not foreground_game or (previous_at and at_ms - previous_at > 3000)):
+            self.misses = 0
+            self.first_miss = 0
+        # A cursor position is only an inference: never create one while a
+        # panel is visible, or override a real click already in flight.
+        if (not self.pending and geometry is None and not frame_detected and foreground_game
+                and isinstance(hover, dict) and hwnd == hover.get('hwnd')
+                and 0 <= at_ms - hover.get('atMs', 0) <= 1500):
+            frame = hover.get('geometry')
+            if isinstance(frame, dict) and self.observe_click(
+                    hover.get('x'), hover.get('y'), hwnd, hover['atMs'], geometry=frame):
+                self.pending['source'] = 'hover'
+                self.last_event = 'hover_inferred_waiting_for_disappearance'
         pending = self.pending
         if pending and at_ms - pending["atMs"] > 10000:
             self.last_event = 'confirmation_timeout'
@@ -108,6 +126,19 @@ class AutomaticSelectionTracker:
         if pending and at_ms <= pending['atMs']:
             return None
         if geometry is not None:
+            if self.provisional and hwnd == self.provisional['windowHwnd']:
+                old = self.provisional['signature']
+                matches = sum(bool(a and b and a == b) for a, b in zip(old, geometry['names']))
+                if matches >= 2:
+                    self.revoked_selection = self.provisional['name']
+                    self.provisional = None
+                    self.last_event = 'selection_inference_revoked'
+                elif sum(bool(n) for n in geometry['names']) >= 2:
+                    self.provisional = None
+            if pending and pending.get('source') == 'hover':
+                self.pending = None
+                pending = None
+                self.last_event = 'hover_panel_returned'
             if pending and geometry['names'][pending['slot']] and geometry['names'][pending['slot']] != pending['name']:
                 # Reroll or another round: the clicked card was not confirmed.
                 self.pending = None
@@ -122,12 +153,16 @@ class AutomaticSelectionTracker:
             self.misses += 1
             if self.misses == 1:
                 self.first_miss = at_ms
-            if self.misses >= 2 and at_ms - self.first_miss >= 400:
+            wait = 5000 if pending.get('source') == 'hover' else 400
+            if self.misses >= 2 and at_ms - self.first_miss >= wait:
                 name = pending["name"]
+                self.selection_source = pending.get('source', 'click')
+                if self.selection_source == 'hover':
+                    self.provisional = dict(pending)
                 self.pending = None
                 self.frame = None
                 self.misses = 0
-                self.last_event = 'selection_confirmed'
+                self.last_event = 'selection_inferred' if self.selection_source == 'hover' else 'selection_confirmed'
                 return name
         elif pending:
             self.misses = 0
@@ -141,6 +176,9 @@ class AutomaticSelectionTracker:
     def reset(self):
         self.frame = None
         self.pending = None
+        self.selection_source = None
+        self.provisional = None
+        self.revoked_selection = None
         self.misses = 0
         self.first_miss = 0
         self.last_frame_at = 0
