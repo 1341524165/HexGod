@@ -1,5 +1,7 @@
 # Repository maintenance rules
 
+- After each release build, refresh the user's desktop HexGod shortcut to the root `hexgod.exe`, with the project root as its working directory and the executable as its icon. Update existing HexGod shortcuts in place; create `HexGod.lnk` if absent. Verification builds must leave the desktop shortcuts unchanged.
+
 - Keep the root for project metadata, the solution, README and the generated user-facing `hexgod.exe` / `hexgod.exe.config`. Keep the launch entrypoint simple: release builds must refresh the root executable and its configuration; verification builds must not overwrite it. Python application code belongs in `src/hexgod`, WPF code in `src/desktop`, operational commands in `scripts`, and tests in their respective `tests` layer.
 - Use package imports and `python -m hexgod`. Do not add `sys.path` mutations, flat compatibility modules, absolute installation paths or implicit imports from the current working directory.
 - Python paths are owned by `hexgod.paths`; desktop paths by `ProjectPaths`. Read-only data belongs in `resources`, model assets in `assets/models`, personal state/logs in `var`, and generated output in `build` or `artifacts`.

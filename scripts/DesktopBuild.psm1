@@ -12,4 +12,28 @@ function Get-DesktopBuildSpec {
         Manifest=(Join-Path $ProjectRoot 'src\desktop\app.manifest')
     }
 }
-Export-ModuleMember -Function Get-DesktopBuildSpec
+function Update-HexgodDesktopShortcut {
+    param([Parameter(Mandatory=$true)][string]$ProjectRoot)
+    $root = (Resolve-Path -LiteralPath $ProjectRoot).ProviderPath
+    $application = Join-Path $root 'hexgod.exe'
+    if (-not (Test-Path -LiteralPath $application -PathType Leaf)) { throw 'Root executable is missing.' }
+    $desktop = [Environment]::GetFolderPath('DesktopDirectory')
+    if (-not $desktop -or -not (Test-Path -LiteralPath $desktop -PathType Container)) { throw 'Desktop directory is unavailable.' }
+    $shortcutShell = New-Object -ComObject WScript.Shell
+    $paths = @(Get-ChildItem -LiteralPath $desktop -File -Filter '*.lnk' | Where-Object {
+        $link = $shortcutShell.CreateShortcut($_.FullName)
+        [IO.Path]::GetFileName($link.TargetPath) -ieq 'hexgod.exe' -or $_.Name -ieq 'HexGod.lnk'
+    } | Select-Object -ExpandProperty FullName)
+    if ($paths.Count -eq 0) { $paths = @(Join-Path $desktop 'HexGod.lnk') }
+    foreach ($path in $paths) {
+        $link = $shortcutShell.CreateShortcut($path)
+        $link.TargetPath = $application
+        $link.WorkingDirectory = $root
+        $link.IconLocation = $application + ',0'
+        $link.Arguments = ''
+        $link.Description = 'HexGod'
+        $link.Save()
+        Write-Output "Desktop shortcut: $path"
+    }
+}
+Export-ModuleMember -Function Get-DesktopBuildSpec, Update-HexgodDesktopShortcut

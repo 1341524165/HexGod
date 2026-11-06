@@ -19,4 +19,5 @@ if ($OutputName -eq 'hexgod.exe') {
     Copy-Item -LiteralPath $output -Destination $rootApplication -Force
     Copy-Item -LiteralPath ($output + '.config') -Destination ($rootApplication + '.config') -Force
     Write-Output "Launch: $rootApplication"
+    Update-HexgodDesktopShortcut -ProjectRoot $projectRoot
 }
