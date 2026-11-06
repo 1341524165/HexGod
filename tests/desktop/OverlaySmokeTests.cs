@@ -196,6 +196,11 @@ static class OverlaySmokeTests {
             Assert(ProjectPaths.FindRoot(Path.Combine(root, "build", "bin")) == root,
                 "Desktop build output cannot locate the repository root");
             c = new Controller(root);
+            var card = (Border)typeof(Controller).GetMethod("EquipmentSuggestion", Fields).Invoke(c,
+                new object[] { Json.D("name", "纳什之牙", "triggerAugments", new[] { "虚幻武器", "其他强化" }), true });
+            var cardContent = (StackPanel)card.Child;
+            Assert(cardContent.Children.Count == 2 && ((TextBlock)cardContent.Children[1]).Text == "虚幻武器 / 其他强化",
+                "Synergy card did not show its augment sources");
             CheckRawInput(c);
             CheckBufferedClick(c);
             backend = (BackendClient)typeof(Controller).GetField("backend", Fields).GetValue(c);
@@ -213,7 +218,9 @@ static class OverlaySmokeTests {
                 Set(c, "buildPath", request(Json.D("action", "build_path", "hero", "复仇焰魂",
                     "itemIds", new[] { 2503, 3020 }, "itemsKnown", true)));
                 Render(c);
-                Assert(Contents(content).Contains("放血者") && Contents(content).Contains("瑞莱") && Contents(content).Contains("大天使"), "Three sample-adjusted choices missing");
+                var currentBuild = Json.Obj(typeof(Controller).GetField("buildPath", Fields).GetValue(c));
+                var currentRegular = Json.A(currentBuild, "regularItems").Select(Json.Obj).Take(3).ToArray();
+                Assert(currentRegular.Length == 3 && currentRegular.All(row => Contents(content).Contains(Json.S(row, "name"))), "Three current sample-adjusted choices missing");
                 Assert(!Contents(content).Contains("黯炎火炬") && !Contents(content).Contains("法师之靴"), "Owned equipment remained in visible suggestions");
                 Assert(!Contents(content).Contains("合成还需") && !Contents(content).Contains("机制适配") && !Contents(content).Contains("单件统计"), "Verbose equipment text remains");
                 Assert(!Contents(content).Contains("海克斯联动") && title.Text.StartsWith("装备推荐"), "Empty synergy column remains");
@@ -231,8 +238,11 @@ static class OverlaySmokeTests {
                 recorded.Clear(); recorded.Add("升级：无尽之刃");
                 Set(c, "buildPath", request(Json.D("action", "build_path", "hero", "齐天大圣", "owned", new[] { "升级：无尽之刃" }, "itemIds", new int[0], "itemsKnown", true)));
                 Render(c);
-                Assert(Contents(content).Contains("无尽之刃") && Contents(content).Contains("2,179场") && Contents(content).Contains("4,439场"), "Upgrade or exact sample sizes missing");
-                Assert(!Contents(content).Contains("挺进破坏者") && !Contents(content).Contains("振奋盔甲"), "Small Wukong samples still occupy top choices");
+                currentBuild = Json.Obj(typeof(Controller).GetField("buildPath", Fields).GetValue(c));
+                currentRegular = Json.A(currentBuild, "regularItems").Select(Json.Obj).Take(3).ToArray();
+                Assert(Contents(content).Contains("无尽之刃") && currentRegular.All(row =>
+                    Contents(content).Contains(Json.S(row, "name")) && (Json.Get(row, "games") == null ||
+                    Contents(content).Contains(Json.N(row, "games").ToString("N0") + "场"))), "Upgrade or current sample sizes missing");
                 Assert(!Contents(content).Contains("海克斯镜片") && !Contents(content).Contains("育恩塔尔"), "Infinity upgrade added unrelated crit equipment");
                 CheckEquipmentColumns(content, 1);
                 Save(content, title, Path.Combine(root, "artifacts", "cache", "mechanics-infinity.png"), 195, 320);

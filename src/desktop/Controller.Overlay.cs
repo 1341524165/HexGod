@@ -137,11 +137,18 @@ namespace hexgod
             string rate = Json.Get(item, "winRate") == null ? "—" : Json.Percent(Json.N(item, "winRate"));
             string count = Json.Get(item, "games") == null ? "—" : games.ToString("N0");
             if (!mechanism) Add(card, rate + " · " + count + "场", 10, "#A4B9C9", false, 1);
-            else card.VerticalAlignment = VerticalAlignment.Center;
+            else {
+                var triggers = Json.A(item, "triggerAugments").Select(Convert.ToString).Where(s => !String.IsNullOrWhiteSpace(s)).ToArray();
+                if (triggers.Length > 0) {
+                    var source = Text(String.Join(" / ", triggers), 9, "#A4B9C9", false);
+                    source.TextWrapping = TextWrapping.NoWrap; source.TextTrimming = TextTrimming.CharacterEllipsis;
+                    card.Children.Add(source);
+                } else card.VerticalAlignment = VerticalAlignment.Center;
+            }
             return new Border { Child = card, Padding = new Thickness(4), Margin = new Thickness(0, 4, 0, 0),
                 MinHeight = 40,
                 CornerRadius = new CornerRadius(5), Background = BrushOf(mechanism ? "#78305046" : "#401D2A39"),
-                ToolTip = Json.S(item, "reason") + (mechanism ? "" : "\n按胜率与样本量综合排序；显示原始胜率。") };
+                ToolTip = (mechanism && Json.A(item, "triggerAugments").Any() ? String.Join(" / ", Json.A(item, "triggerAugments").Select(Convert.ToString)) + "\n" : "") + Json.S(item, "reason") + (mechanism ? "" : "\n按胜率与样本量综合排序；显示原始胜率。") };
         }
         void RenderEquipmentColumns() {
             var regularItems = Json.A(Json.Obj(buildPath), "regularItems").Select(Json.Obj).Take(3).ToArray();

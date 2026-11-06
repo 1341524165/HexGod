@@ -116,7 +116,7 @@ class AugmentMechanics:
         resource = self.resources.get(alias)
         return lane, resource == 'Mana' if resource is not None else None
 
-    def plan(self, owned, route, build, ids, known, alias):
+    def plan(self, owned, route, build, ids, known, alias, _attribute=True):
         analyses = [self.analyze(n) for n in sorted(set(owned))]
         features = set(f for a in analyses for f in a['features'])
         required = set(i for a in analyses for i in a['required'])
@@ -214,6 +214,21 @@ class AugmentMechanics:
         # owned components, then reuse the hero route and deterministic item ID.
         candidates.sort(key=lambda c: (-int(c['required']), -c['componentCredit'], -c['mechanismScore'],
                                        -int(c['id'] in route_set), c['id']))
+        if _attribute and candidates:
+            # Attribute each item to rules that independently nominate it;
+            # do not label every item with every owned augment.
+            sources = {c['id']: [] for c in candidates}
+            if len(analyses) == 1:
+                for item_sources in sources.values():
+                    item_sources.append(analyses[0]['name'])
+            else:
+                for analysis in analyses:
+                    solo = self.plan([analysis['name']], route, build, ids, known, alias, _attribute=False)
+                    for item in solo['candidates']:
+                        if item['id'] in sources:
+                            sources[item['id']].append(analysis['name'])
+            for candidate in candidates:
+                candidate['triggerAugments'] = sources[candidate['id']]
         preferred = [c['id'] for c in candidates]
         constrained_route = [i for i in route if eligible(i)]
         if not contradictory and 'ad_to_ap' in features:
