@@ -74,9 +74,9 @@ class MatchJournal:
                 self.summary['observedTitles'].append(name)
         diagnostic = result.get('selectionDiagnostic')
         if diagnostic != self.last_selection:
-            if diagnostic in ('confirmation_timeout', 'clicked_slot_changed', 'game_window_changed'):
+            if diagnostic in ('confirmation_timeout', 'clicked_slot_changed', 'game_window_changed', 'hover_no_candidate'):
                 self.summary['unresolved'] += 1
-                self.event('selection_unresolved', reason=diagnostic)
+                self.event('selection_unresolved', reason=diagnostic, hover=result.get('hoverDiagnostic'))
             self.last_selection = diagnostic
         changed = panel and names != self.previous
         if changed:
@@ -102,4 +102,4 @@ class MatchJournal:
                    capture=payload.get('capture_context'), layout=(payload.get('preset') or {}).get('key'),
                    imageSize=payload.get('imageSize'), detectedCards=payload.get('titleCardRects'),
                    reason=result.get('captureReason'), geometry=result.get('trackingGeometry'),
-                   selection=result.get('selectionDiagnostic'), crops=crops, timings=result.get('timings'))
+                   selection=result.get('selectionDiagnostic'), hover=result.get('hoverDiagnostic'), crops=crops, timings=result.get('timings'))

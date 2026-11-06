@@ -21,6 +21,71 @@ def fixture():
 
 
 class AutomaticSelectionTests(unittest.TestCase):
+    def test_latest_outside_or_reroll_sample_does_not_fall_back_to_old_card(self):
+        g = dict(live_geometry(*fixture()), rerollHitboxes=[[1000,1100,1100,1200]])
+        for x,y,reason in [(50,50,'outside_card_or_reroll'), (1050,1150,'cursor_on_reroll')]:
+            tracker = AutomaticSelectionTracker()
+            tracker.observe_frame(g, foreground_game=True, frame_detected=True, hwnd=41, at_ms=1000)
+            history = [dict(x=1060,y=670,hwnd=41,atMs=1100,geometry=g), dict(x=x,y=y,hwnd=41,atMs=1200,geometry=g)]
+            tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=1300, hover_history=history)
+            tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=1800, hover_history=history)
+            self.assertIsNone(tracker.pending)
+            self.assertEqual(tracker.hover_diagnostic['reason'], reason)
+
+    def test_user_reported_misses_accept_full_recorded_card_bounds(self):
+        import json
+        cases = json.loads((Path(__file__).parents[1] / 'fixtures/reported-missed-selections.json').read_text('utf-8'))['cases']
+        for case in cases:
+            with self.subTest(selection=case['reportedSelection']):
+                t = 1000
+                cards = case['cards']
+                payload = dict(titleRegionCards=True, anchor_detection={'detected': True},
+                    capture_context=dict(foreground_matches_lol=True, lol_window_bbox=[0,0,2560,1440], lol_window_hwnd=41, timestamp_ms=t),
+                    crop_geometry=dict(card_rects=cards, image_size=[2560,1440], augment_rects=[dict(x=c[0],y=400,width=c[2]-c[0],height=40) for c in cards]))
+                g = live_geometry(payload, [dict(name=n,matched=True) for n in case['names']])
+                tracker = AutomaticSelectionTracker()
+                tracker.observe_frame(g, foreground_game=True, frame_detected=True, hwnd=41, at_ms=t)
+                slot = case['names'].index(case['reportedSelection'])
+                card = cards[slot]
+                sample = dict(x=(card[0]+card[2])//2, y=card[3]-2, hwnd=41, atMs=1100, geometry=g)
+                tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=1500, hover_history=[sample])
+                for at in (2000,3000,4000,5000,6000):
+                    self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=at, hover_history=[sample]))
+                self.assertEqual(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=6500), case['reportedSelection'])
+
+    def test_next_offer_does_not_erase_a_selection_waiting_five_seconds(self):
+        g = dict(live_geometry(*fixture()), names=['术士果汁盒','尖端发明家','未收录：过量延伸者'])
+        next_offer = dict(g, names=['科学狂人','不祥契约','死之舞'], capturedAtMs=2000)
+        tracker = AutomaticSelectionTracker()
+        tracker.observe_frame(g, foreground_game=True, frame_detected=True, hwnd=41, at_ms=1000)
+        history = [dict(x=720,y=670,hwnd=41,atMs=1200,geometry=g)]
+        tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=1500, hover_history=history)
+        for at in (2000,3000,4000,5000,6000):
+            self.assertIsNone(tracker.observe_frame(next_offer, foreground_game=True, frame_detected=True, hwnd=41, at_ms=at, hover_history=history))
+        self.assertEqual(tracker.observe_frame(next_offer, foreground_game=True, frame_detected=True, hwnd=41, at_ms=6500), '术士果汁盒')
+        self.assertEqual(tracker.frame['names'], next_offer['names'])
+        self.assertEqual(tracker.selection_evidence['slot'], 0)
+        next_offer['capturedAtMs'] = 6600
+        tracker.observe_frame(next_offer, foreground_game=True, frame_detected=True, hwnd=41, at_ms=6600)
+        next_history = [dict(x=720,y=670,hwnd=41,atMs=6650,geometry=next_offer)]
+        tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=6800, hover_history=next_history)
+        for at in (7300,8300,9300,10300,11300):
+            self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=at, hover_history=next_history))
+        self.assertEqual(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=11800), '科学狂人')
+
+    def test_hover_during_capture_supersedes_request_time_snapshot(self):
+        geometry = dict(live_geometry(*fixture()), names=['侵蚀', '神射法师', '海克斯科技龙魂'])
+        tracker = AutomaticSelectionTracker()
+        tracker.observe_frame(geometry, foreground_game=True, frame_detected=True, hwnd=41, at_ms=1000)
+        earlier = dict(x=1060, y=670, hwnd=41, atMs=1200, geometry=geometry)
+        selected = dict(x=720, y=670, hwnd=41, atMs=1700, geometry=geometry)
+        # The first request began before the move; the second contains the
+        # samples collected during screenshot capture and OCR.
+        tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=1800, hover_history=[earlier])
+        tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=2300, hover_history=[earlier, selected])
+        for at in (3300, 4300, 5300, 6300):
+            self.assertIsNone(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=at, hover_history=[]))
+        self.assertEqual(tracker.observe_frame(None, foreground_game=True, frame_detected=False, hwnd=41, at_ms=6800, hover_history=[]), '侵蚀')
     def test_hover_inference_waits_five_seconds_and_revokes_when_panel_returns(self):
         geometry = live_geometry(*fixture())
         hover = dict(x=1060, y=670, hwnd=41, atMs=1200, geometry=geometry)
@@ -183,13 +248,16 @@ class AutomaticSelectionTests(unittest.TestCase):
                 initial = backend.dispatch(request)
                 hover = {'x': 1060, 'y': 670, 'hwnd': 41, 'atMs': timestamp + 100,
                          'geometry': initial['trackingGeometry']}
-                first = backend.dispatch(dict(request, hoverCandidate=hover))
+                first = backend.dispatch(dict(request, hoverHistory=[hover]))
                 self.assertIsNone(first['autoSelection'])
-                for _ in range(4): self.assertIsNone(backend.dispatch(request)['autoSelection'])
-                inferred = backend.dispatch(request)
+                for _ in range(4): self.assertIsNone(backend.dispatch(dict(request, hoverHistory=[hover]))['autoSelection'])
+                inferred = backend.dispatch(dict(request, hoverHistory=[hover]))
                 self.assertEqual(inferred['autoSelection'], '炼狱导管')
                 self.assertEqual(inferred['selectionSource'], 'hover')
                 self.assertEqual(backend.ocr.journal.summary['inferred'], ['炼狱导管'])
+                events = (Path(folder) / 'match' / 'events.jsonl').read_text(encoding='utf-8')
+                self.assertIn('"hoverAtMs"', events)
+                self.assertIn('"slot": 2', events)
                 restored_result = backend.dispatch(dict(request, owned=['炼狱导管']))
                 self.assertEqual(restored_result['revokedSelection'], '炼狱导管')
                 self.assertEqual(backend.ocr.journal.summary['inferred'], [])

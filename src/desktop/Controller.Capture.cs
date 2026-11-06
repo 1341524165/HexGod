@@ -68,7 +68,7 @@ namespace hexgod
                 bool openingProbe = liveContext != null && Json.N(liveContext, "gameTime") < 90 && ownedAugments.Count == 0;
                 var result = await backend.Request(Json.D("action", "ocr", "hero", hero, "image", image,
                     "preset", Convert.ToString(Find<ComboBox>("PresetCombo").SelectedItem), "owned", ownedAugments.ToArray(),
-                    "hoverCandidate", hoverCandidate,
+                    "hoverHistory", hoverHistory.ToArray(),
                     "probeTitles", openingProbe || choiceView.Visible || selectionPending, "contextId", image != null ? "offline|" + revision : MatchLogKey + "|" + hero,
                     "sessionKey", MatchLogKey, "evidenceKind", image != null ? "offline" :
                         GameWindowProbe.IsLocalFixture(liveGameHwnd) ? "desktop_fixture" : "live"));
@@ -98,7 +98,7 @@ namespace hexgod
                 } else if (automatic && Json.N(result, "matchedCount") == 0 && lastResult != null) {
                     Status(Json.S(result, "message") + " 上次结果保留，时间见卡片上方。");
                 } else if (!passive || !SameScreenChoices(result)) RenderResult(result);
-                if (automaticallySelected.Length > 0) choiceView.Selected(NowMs());
+                if (automaticallySelected.Length > 0 && !Json.B(result, "augmentPanelVisible")) choiceView.Selected(NowMs());
                 RenderOverlay();
             }
             catch (Exception error) { RuntimeLog.Write(appDir, "ocr", error); if (!closing) Status("识别失败：" + error.Message, true); }
@@ -118,7 +118,7 @@ namespace hexgod
                 Status("选项重新出现，已撤销此前的推测：" + revokedSelection);
             }
             if (automatic && automaticallySelected.Length > 0 && !closing && revision == heroRevision) {
-                await AddOwned(automaticallySelected);
+                await AddOwned(automaticallySelected, Json.B(lastFrame, "augmentPanelVisible"));
                 if (ownedAugments.Contains(automaticallySelected)) Status((Json.S(lastFrame, "selectionSource") == "hover" ? "根据鼠标位置推测选择：" : "已自动记录你选择的海克斯：") + automaticallySelected);
             }
         }

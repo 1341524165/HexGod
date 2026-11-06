@@ -4,11 +4,14 @@ import sys
 import unittest
 
 from hexgod.recommendation.aramgg import AramggEngine
+from hexgod.paths import CLIENT_DATA_DIR
 
 
 class MechanismPlanningTests(unittest.TestCase):
     @classmethod
-    def setUpClass(cls): cls.engine = AramggEngine()
+    def setUpClass(cls):
+        # Exact counts and ordering below describe this immutable snapshot.
+        cls.engine = AramggEngine(folder=CLIENT_DATA_DIR / '16.19.1')
 
     def plan(self, hero, owned, ids=(), known=True):
         return self.engine.build_path(hero, owned, list(ids), known)

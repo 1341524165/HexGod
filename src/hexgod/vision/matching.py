@@ -4,6 +4,11 @@ from hexgod.vision.pipeline import normalize_text
 
 def corrected_title(raw, names):
     text=normalize_text(raw)
+    # Repeated glyph confusion in the title crop; keep this a full-title
+    # alias rather than raising fuzzy tolerance for every augment.
+    aliases = {'喂鸣喂鸣': '喂呜喂呜', '喂嗚喂嗚': '喂呜喂呜'}
+    if text in aliases and aliases[text] in names:
+        return aliases[text]
     if not 4 <= len(text) <= 12:
         return None
     def distance(a,b):

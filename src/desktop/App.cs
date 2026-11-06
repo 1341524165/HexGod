@@ -276,11 +276,11 @@ namespace hexgod
                 "点击监听未启动：" + clickListener.Error;
             RenderOverlay();
         }
-        async Task AddOwned(string raw) {
+        async Task AddOwned(string raw, bool keepChoices = false) {
             if (busy || !ready || hero.Length == 0) return;
             string value = (raw ?? "").Trim();
             if (value.Length == 0) { Status("请先输入本局已经选择的海克斯名称。", true); return; }
-            await ChangeOwned(ownedAugments.Concat(new[] { value }).ToArray(), false);
+            await ChangeOwned(ownedAugments.Concat(new[] { value }).ToArray(), false, keepChoices);
         }
         async Task RemoveOwned(string name) {
             if (busy || !ready) return;
@@ -304,9 +304,9 @@ namespace hexgod
             }
             return Task.FromResult(0);
         }
-        async Task ChangeOwned(string[] proposed, bool newMatch) {
+        async Task ChangeOwned(string[] proposed, bool newMatch, bool keepChoices = false) {
             int revision = ++heroRevision;
-            queuedClick = null; bufferedClick = null; selectionPending = false; trackingGeometry = null;
+            if (!keepChoices) { queuedClick = null; bufferedClick = null; selectionPending = false; trackingGeometry = null; }
             SetBusy(true);
             try {
                 var detail = await backend.Request(Json.D("action", "hero", "hero", hero, "owned", proposed));
@@ -315,7 +315,7 @@ namespace hexgod
                 ownedAugments.Clear();
                 ownedAugments.AddRange(Json.A(detail, "owned").Select(Convert.ToString));
                 if (newMatch) choiceView.Reset();
-                else if (added) choiceView.Selected(NowMs());
+                else if (added && !keepChoices) choiceView.Selected(NowMs());
                 overlayShowChoices = false;
                 jointContextAvailable = Json.B(detail, "jointContextAvailable");
                 RenderItems(detail);

@@ -287,11 +287,12 @@ class OcrService:
                 result["autoSelection"] = self.selection_tracker.observe_frame(
                     geometry, foreground_game=bool(context.get("foreground_matches_lol")),
                     frame_detected=frame_detected, hwnd=context.get("lol_window_hwnd"),
-                    at_ms=result["capturedAtMs"], hover=request.get('hoverCandidate'))
+                    at_ms=result["capturedAtMs"], hover=request.get('hoverCandidate'), hover_history=request.get('hoverHistory'))
                 result['selectionPending'] = self.selection_tracker.pending is not None
                 result["gameWindowHwnd"] = context.get("lol_window_hwnd") if context.get("foreground_matches_lol") else None
                 result["autoTrackingReady"] = geometry is not None
                 result['selectionDiagnostic'] = self.selection_tracker.last_event
+                result['hoverDiagnostic'] = self.selection_tracker.hover_diagnostic
                 result['revokedSelection'] = self.selection_tracker.revoked_selection
                 if result['revokedSelection']:
                     name = result['revokedSelection']
@@ -303,7 +304,10 @@ class OcrService:
                     result['selectionSource'] = source
                     if source == 'hover':
                         self.journal.summary.setdefault('inferred', []).append(result['autoSelection'])
-                        self.journal.event('selection_inferred', name=result['autoSelection'], source='hover')
+                        evidence = self.selection_tracker.selection_evidence or {}
+                        self.journal.event('selection_inferred', name=result['autoSelection'], source='hover',
+                                           slot=evidence.get('slot', -1) + 1, x=evidence.get('x'), y=evidence.get('y'),
+                                           hoverAtMs=evidence.get('atMs'), offer=evidence.get('signature'))
                     else:
                         self.journal.summary['confirmed'].append(result['autoSelection'])
                         self.journal.event('selection_confirmed', name=result['autoSelection'])
